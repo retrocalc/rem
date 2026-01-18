@@ -1,0 +1,200 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  ms-parametros:
+    build: ./ms-parametros
+    container_name: ms-parametros
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - NODE_ENV=production
+      - JSON_DATA_PATH=/app/data/parametros.json
+      - LOG_LEVEL=info
+    volumes:
+      - parametros-data:/app/data
+      - parametros-logs:/app/logs
+    networks:
+      - app-network
+    depends_on:
+      - redis
+
+  ms-empleados:
+    build: ./ms-empleados
+    container_name: ms-empleados
+    ports:
+      - "3002:3002"
+    environment:
+      - PORT=3002
+      - NODE_ENV=production
+      - JSON_DATA_PATH=/app/data/empleados.json
+      - LOG_LEVEL=info
+    volumes:
+      - empleados-data:/app/data
+      - empleados-logs:/app/logs
+    networks:
+      - app-network
+    depends_on:
+      - redis
+
+  ms-contratos:
+    build: ./ms-contratos
+    container_name: ms-contratos
+    ports:
+      - "3003:3003"
+    environment:
+      - PORT=3003
+      - NODE_ENV=production
+      - JSON_DATA_PATH=/app/data/contratos.json
+      - LOG_LEVEL=info
+    volumes:
+      - contratos-data:/app/data
+      - contratos-logs:/app/logs
+    networks:
+      - app-network
+    depends_on:
+      - redis
+
+  ms-calculos:
+    build: ./ms-calculos
+    container_name: ms-calculos
+    ports:
+      - "3004:3004"
+    environment:
+      - PORT=3004
+      - NODE_ENV=production
+      - JSON_DATA_PATH=/app/data/calculos.json
+      - LOG_LEVEL=info
+    volumes:
+      - calculos-data:/app/data
+      - calculos-logs:/app/logs
+    networks:
+      - app-network
+    depends_on:
+      - redis
+
+  ms-calc-rules:
+    build: ./ms-calc-rules
+    container_name: ms-calc-rules
+    ports:
+      - "3005:3005"
+    environment:
+      - PORT=3005
+      - NODE_ENV=production
+      - JSON_DATA_PATH=/app/data/calc-rules.json
+      - LOG_LEVEL=info
+    volumes:
+      - calc-rules-data:/app/data
+      - calc-rules-logs:/app/logs
+    networks:
+      - app-network
+    depends_on:
+      - redis
+
+  query-gateway:
+    build: ./query-gateway
+    container_name: query-gateway
+    ports:
+      - "3006:3006"
+    environment:
+      - PORT=3006
+      - NODE_ENV=production
+      - LOG_LEVEL=info
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - PARAMETROS_URL=http://ms-parametros:3001/api
+      - EMPLEADOS_URL=http://ms-empleados:3002/api
+      - CONTRATOS_URL=http://ms-contratos:3003/api
+      - CALCULOS_URL=http://ms-calculos:3004/api
+      - CALC_RULES_URL=http://ms-calc-rules:3005/api
+    networks:
+      - app-network
+    depends_on:
+      - redis
+      - ms-parametros
+      - ms-empleados
+      - ms-contratos
+      - ms-calculos
+      - ms-calc-rules
+
+  command-gateway:
+    build: ./command-gateway
+    container_name: command-gateway
+    ports:
+      - "3007:3007"
+    environment:
+      - PORT=3007
+      - NODE_ENV=production
+      - LOG_LEVEL=info
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - PARAMETROS_URL=http://ms-parametros:3001/api
+      - EMPLEADOS_URL=http://ms-empleados:3002/api
+      - CONTRATOS_URL=http://ms-contratos:3003/api
+      - CALCULOS_URL=http://ms-calculos:3004/api
+      - CALC_RULES_URL=http://ms-calc-rules:3005/api
+    networks:
+      - app-network
+    depends_on:
+      - redis
+      - ms-parametros
+      - ms-empleados
+      - ms-contratos
+      - ms-calculos
+      - ms-calc-rules
+
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - LOG_LEVEL=info
+      - PARAMETROS_URL=http://ms-parametros:3001
+      - EMPLEADOS_URL=http://ms-empleados:3002
+      - CONTRATOS_URL=http://ms-contratos:3003
+      - CALCULOS_URL=http://ms-calculos:3004
+      - CALC_RULES_URL=http://ms-calc-rules:3005
+      - QUERY_GATEWAY_URL=http://query-gateway:3006
+      - COMMAND_GATEWAY_URL=http://command-gateway:3007
+    networks:
+      - app-network
+    depends_on:
+      - ms-parametros
+      - ms-empleados
+      - ms-contratos
+      - ms-calculos
+      - ms-calc-rules
+      - query-gateway
+      - command-gateway
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  parametros-data:
+  empleados-data:
+  contratos-data:
+  calculos-data:
+  calc-rules-data:
+  parametros-logs:
+  empleados-logs:
+  contratos-logs:
+  calculos-logs:
+  calc-rules-logs:
