@@ -1,6 +1,6 @@
-# 10. Conclusiones y Recomendaciones
+# 11. Conclusiones y Recomendaciones
 
-## 10.1. Síntesis de hallazgos principales
+## 11.1. Síntesis de hallazgos principales
 
 ### Complejidad sistémica identificada
 A lo largo de este estudio se ha documentado una complejidad sistémica en la administración remunerativa del sector público chileno que trasciende la mera diversidad institucional para constituirse en un desafío estructural que afecta eficiencia, equidad y transparencia.
@@ -30,7 +30,7 @@ El estudio identificó que el cálculo retroactivo no es una funcionalidad margi
 - Genera riesgos de error compuesto al aplicar ajustes sobre cálculos ya complejos
 - Crea incertidumbre prolongada en funcionarios sobre montos definitivos
 
-## 10.2. Recomendaciones estratégicas para decisores
+## 11.2. Recomendaciones estratégicas para decisores
 
 ### Nivel 1: Decisiones de política pública inmediatas
 
@@ -92,7 +92,7 @@ El estudio identificó que el cálculo retroactivo no es una funcionalidad margi
 - **Responsable**: Ministerio de Hacienda con asesoría técnica especializada.
 - **Impacto**: Reducción del 70-90% en litigios por diferencias en aplicación retroactiva.
 
-## 10.3. Hoja de ruta de implementación priorizada
+## 11.3. Hoja de ruta de implementación priorizada
 
 ### Fase 0: Fundaciones (Meses 1-6)
 **Objetivo**: Establecer bases institucionales y técnicas para transformación escalable.
@@ -179,7 +179,7 @@ El estudio identificó que el cálculo retroactivo no es una funcionalidad margi
 - Atracción de talento internacional a ecosistema chileno.
 - Publicación de 20+ estudios de caso en revistas académicas internacionales.
 
-## 10.4. Direcciones futuras de investigación y desarrollo
+## 11.4. Direcciones futuras de investigación y desarrollo
 
 ### Áreas prioritarias de investigación aplicada
 

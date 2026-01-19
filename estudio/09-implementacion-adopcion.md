@@ -596,6 +596,6 @@ La implementación exitosa de un sistema integrado de remuneraciones requiere no
 
 ---
 
-**Próximo capítulo**: [10. Conclusiones y Recomendaciones](../README.md#10-conclusiones-y-recomendaciones)
+**Próximo capítulo**: [10. Beneficios del Reconocimiento Automático de Textos para Identificación de Datos en Documentos Oficiales](../README.md#10-beneficios-del-reconocimiento-automático-de-textos-para-identificación-de-datos-en-documentos-oficiales)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*

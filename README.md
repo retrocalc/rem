@@ -40,13 +40,21 @@ El sistema proporciona una plataforma unificada para gestionar todo el ciclo de 
 - **Cálculo diferenciado** por tipo de contrato y categoría laboral
 - **Generación de liquidaciones** detalladas
 
-### 4. Parámetros del Sistema
+### 4. Procesamiento Automático de Documentos Oficiales
+- **Reconocimiento automático de textos (OCR/ICR)** para digitalización de documentos oficiales
+- **Extracción inteligente de datos** de resoluciones, contratos, certificados y comunicaciones
+- **Validación automática** contra normativas institucionales y bases de datos
+- **Integración directa con sistemas** de remuneración sin intervención manual
+- **Reducción de errores de digitación** y garantía de cumplimiento normativo
+- **Trazabilidad completa** desde documento original hasta cálculo remunerativo
+
+### 5. Parámetros del Sistema
 - **Configuración institucional** centralizada
 - **Gestión de períodos de proceso** (mes-año)
 - **Administración de porcentajes** y tasas aplicables
 - **Personalización de reglas** por institución
 
-### 5. Dashboard de Control
+### 6. Dashboard de Control
 - **Interfaz web intuitiva** para administración completa
 - **Vistas consolidadas** de empleados, contratos y cálculos
 - **Herramientas de mantenimiento** (CRUD) para todos los registros
@@ -176,12 +184,13 @@ El estudio fue desarrollado como parte del proyecto de implementación del **Sis
 2. [Problemáticas Estructurales Comunes](estudio/02-problematicas-estructurales.md) - Análisis de los desafíos compartidos por instituciones públicas.
 3. [Complejidades del Cálculo Retroactivo](estudio/03-calculo-retroactivo.md) - Especificidades técnicas del cálculo retroactivo en sistemas públicos.
 4. [Casos Institucionales Nacionales](estudio/04-casos-institucionales-nacionales.md) - Análisis detallado de Gendarmería, Carabineros, PDI y Fuerzas Armadas.
-5. [Análisis Comparativo Internacional](estudio/05-analisis-comparativo-internacional.md) - Estudio de sistemas latinoamericanos, europeos y norteamericanos.
+5. [Análisis Comparativo Internacional](estudio/05-analisis-comparativo-international.md) - Estudio de sistemas latinoamericanos, europeos y norteamericanos.
 6. [Dimensiones Técnico-Normativas](estudio/06-dimensiones-tecnico-normativas.md) - Aspectos legales, normativos y de validación.
 7. [Impacto Operativo y Administrativo](estudio/07-impacto-operativo-administrativo.md) - Carga de trabajo, riesgos de error y costos ocultos.
 8. [Solución Integrada Propuesta](estudio/08-solucion-integrada-propuesta.md) - Arquitectura, mecanismos y componentes de la solución.
 9. [Implementación y Adopción](estudio/09-implementacion-adopcion.md) - Estrategias de despliegue, capacitación y gestión del cambio.
-10. [Conclusiones y Recomendaciones](estudio/10-conclusiones-recomendaciones.md) - Síntesis de hallazgos y recomendaciones para decisores.
+10. [Beneficios del Reconocimiento Automático de Textos para Identificación de Datos en Documentos Oficiales](estudio/10-beneficios-reconocimiento-textos.md) - Ventajas de la automatización documental en procesos remunerativos.
+11. [Conclusiones y Recomendaciones](estudio/11-conclusiones-recomendaciones.md) - Síntesis de hallazgos y recomendaciones para decisores.
 
 
 *Este estudio forma parte del desarrollo del Sistema Integrado de Gestión de Remuneraciones Institucionales.*

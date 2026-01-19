@@ -102,7 +102,7 @@ Más allá de su función operativa, los sistemas de remuneraciones cumplen role
 
 ## 1.6. Estructura del documento
 
-Este estudio se organiza en diez capítulos que progresan desde el análisis de problemáticas hasta la propuesta de soluciones:
+Este estudio se organiza en once capítulos que progresan desde el análisis de problemáticas hasta la propuesta de soluciones:
 
 1. **Introducción y contexto** (presente capítulo)
 2. **Problemáticas estructurales comunes**
@@ -113,7 +113,8 @@ Este estudio se organiza en diez capítulos que progresan desde el análisis de 
 7. **Impacto operativo y administrativo**
 8. **Solución integrada propuesta**
 9. **Implementación y adopción**
-10. **Conclusiones y recomendaciones**
+10. **Beneficios del reconocimiento automático de textos para identificación de datos en documentos oficiales**
+11. **Conclusiones y recomendaciones**
 
 Cada capítulo se construye sobre los hallazgos de los anteriores, creando un análisis integral que permite comprender la totalidad del desafío y diseñar soluciones efectivas.
 
