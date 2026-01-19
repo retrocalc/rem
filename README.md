@@ -12,8 +12,8 @@ El sistema proporciona una plataforma unificada para gestionar todo el ciclo de 
 
 **Valor Estratégico**:
 - Reducción de errores manuales en cálculos complejos
-- Calculo Automatizado de pagos Retroactivos (ascensos y asignaciones)
-- Generar eventos de auditoria en toda actualización manual de datos.
+- Cálculo Automatizado de pagos Retroactivos (ascensos y asignaciones)
+- Generar eventos de auditoría como apoyo a las actualizaciones manuales.
 - Cumplimiento automático con normativas institucionales
 - Centralización de información para auditoría y reportes
 - Optimización del tiempo del personal administrativo
