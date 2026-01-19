@@ -4,7 +4,7 @@
 
 Sistema centralizado para la administración y cálculo de remuneraciones del personal de instituciones estatales, diseñado específicamente para organizaciones con estructuras salariales complejas como minusterios, fuerzas armadas y de orden, municipalidades, etc.
 
-El sistema proporciona una plataforma unificada para gestionar todo el ciclo de vida de las remuneraciones, desde el registro de empleados y contratos hasta el cálculo automático de pagos según las normativas institucionales específicas.
+El sistema proporciona una plataforma unificada para gestionar todo el ciclo de vida de las remuneraciones, desde el registro de empleados y contratos hasta el cálculo automático de pagos según las normativas institucionales específicas. **Este sistema está fundamentado en un [estudio exhaustivo](#estudio-de-los-sistemas-de-pago-de-remuneraciones-de-las-instituciones-públicas) sobre las complejidades remunerativas del sector público chileno.**
 
 ## Propósito del Sistema
 
@@ -152,3 +152,38 @@ Para asistencia técnica o consultas sobre la implementación del sistema, conta
 
 retro.calc.137@gmail.com
 *Última actualización: Enero 2026*
+
+---
+
+# Estudio de los Sistemas de Pago de Remuneraciones de las Instituciones Públicas
+
+## Contexto y Fundamentación
+
+Este estudio representa una investigación exhaustiva sobre los sistemas de remuneración en instituciones públicas chilenas, con énfasis en las fuerzas armadas y de orden. El análisis identifica las complejidades estructurales, normativas y operativas que enfrentan estas organizaciones, proponiendo una solución tecnológica integrada para modernizar y optimizar los procesos de cálculo y pago de remuneraciones.
+
+El estudio fue desarrollado como parte del proyecto de implementación del **Sistema Integrado de Gestión de Remuneraciones Institucionales**, proporcionando el marco conceptual y técnico que fundamenta las decisiones de diseño arquitectónico y funcional del sistema.
+
+## Hallazgos Clave del Estudio
+
+- **Fragmentación extrema**: Más de 300 instituciones públicas operan con sistemas remunerativos aislados, generando duplicación de esfuerzos e inconsistencia normativa.
+- **Complejidad normativa acumulativa**: Reformas salariales sucesivas han creado capas de complejidad que dificultan la aplicación correcta de las normativas.
+- **Dependencia crítica de expertise tácito**: Sistemas actuales dependen del conocimiento no documentado de pocos especialistas, creando vulnerabilidades operacionales.
+- **Costo oculto monumental**: Procesos manuales, errores recurrentes y litigios representan un costo fiscal sustancial no cuantificado.
+- **Retroactividad como multiplicador de complejidad**: El cálculo retroactivo incrementa exponencialmente el esfuerzo de validación y genera riesgos de error compuesto.
+
+## Índice General del Estudio
+
+1. [Introducción y Contexto General](estudio/01-introduccion-contexto.md) - Contexto, metodología y alcance del estudio.
+2. [Problemáticas Estructurales Comunes](estudio/02-problematicas-estructurales.md) - Análisis de los desafíos compartidos por instituciones públicas.
+3. [Complejidades del Cálculo Retroactivo](estudio/03-calculo-retroactivo.md) - Especificidades técnicas del cálculo retroactivo en sistemas públicos.
+4. [Casos Institucionales Nacionales](estudio/04-casos-institucionales-nacionales.md) - Análisis detallado de Gendarmería, Carabineros, PDI y Fuerzas Armadas.
+5. [Análisis Comparativo Internacional](estudio/05-analisis-comparativo-internacional.md) - Estudio de sistemas latinoamericanos, europeos y norteamericanos.
+6. [Dimensiones Técnico-Normativas](estudio/06-dimensiones-tecnico-normativas.md) - Aspectos legales, normativos y de validación.
+7. [Impacto Operativo y Administrativo](estudio/07-impacto-operativo-administrativo.md) - Carga de trabajo, riesgos de error y costos ocultos.
+8. [Solución Integrada Propuesta](estudio/08-solucion-integrada-propuesta.md) - Arquitectura, mecanismos y componentes de la solución.
+9. [Implementación y Adopción](estudio/09-implementacion-adopcion.md) - Estrategias de despliegue, capacitación y gestión del cambio.
+10. [Conclusiones y Recomendaciones](estudio/10-conclusiones-recomendaciones.md) - Síntesis de hallazgos y recomendaciones para decisores.
+
+---
+
+*Este estudio forma parte del desarrollo del Sistema Integrado de Gestión de Remuneraciones Institucionales.*
