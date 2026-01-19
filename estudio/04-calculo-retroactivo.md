@@ -152,20 +152,20 @@ El cálculo retroactivo de ascensos representa uno de los desafíos técnicos m�
 
 ```mermaid
 flowchart TD
-    Start[Inicio: Ascenso con efecto retroactivo] --> Dates[Identificar fechas clave:<br/>- Fecha efectiva ascenso<br/>- Fecha resolución<br/>- Fecha notificación]
-    Dates --> Periods[Determinar períodos afectados:<br/>Meses completos/parciales entre<br/>fecha efectiva y pago actual]
-    Periods --> Verify[Verificar pagos ya realizados:<br/>Historial completo con desglose<br/>por componente para cada mes]
-    Verify --> Reconstruct[Reconstruir línea de tiempo profesional:<br/>Secuencia exacta de grados con fechas]
-    Reconstruct --> ForEach[Para cada mes del período retroactivo] --> GetTable[Obtener tabla salarial histórica<br/>vigente en ese mes específico]
-    GetTable --> Calculate[Calcular remuneración debida:<br/>- Sueldo base nuevo grado<br/>- Asignaciones fijas<br/>- Porcentajes y bonificaciones]
-    Calculate --> ApplyLimits[Aplicar límites y topes legales<br/>vigentes en ese mes]
-    ApplyLimits --> Compare[Comparar con lo efectivamente pagado<br/>(con grado anterior)]
-    Compare --> Difference[Calcular diferencia a pagar/<br/>recuperar para ese mes]
+    Start[Inicio: Ascenso con efecto retroactivo] --> Dates[Identificar fechas clave:<br>- Fecha efectiva ascenso<br>- Fecha resolución<br>- Fecha notificación]
+    Dates --> Periods[Determinar períodos afectados:<br>Meses completos/parciales entre<br>fecha efectiva y pago actual]
+    Periods --> Verify[Verificar pagos ya realizados:<br>Historial completo con desglose<br>por componente para cada mes]
+    Verify --> Reconstruct[Reconstruir línea de tiempo profesional:<br>Secuencia exacta de grados con fechas]
+    Reconstruct --> ForEach[Para cada mes del período retroactivo] --> GetTable[Obtener tabla salarial histórica<br>vigente en ese mes específico]
+    GetTable --> Calculate[Calcular remuneración debida:<br>- Sueldo base nuevo grado<br>- Asignaciones fijas<br>- Porcentajes y bonificaciones]
+    Calculate --> ApplyLimits[Aplicar límites y topes legales<br>vigentes en ese mes]
+    ApplyLimits --> Compare[Comparar con lo efectivamente pagado<br>(con grado anterior)]
+    Compare --> Difference[Calcular diferencia a pagar/<br>recuperar para ese mes]
     Difference --> Next{¿Siguiente mes?}
     Next -- Sí --> ForEach
-    Next -- No --> Sum[Sumar diferencias de todos los meses<br/>para obtener total retroactivo]
-    Sum --> Adjust[Ajustar por variaciones paramétricas:<br/>- Tasas previsionales históricas<br/>- Impuestos históricos<br/>- Descuentos judiciales históricos]
-    Adjust --> Final[Fin: Monto retroactivo total a pagar/<br/>recuperar con desglose mensual]
+    Next -- No --> Sum[Sumar diferencias de todos los meses<br>para obtener total retroactivo]
+    Sum --> Adjust[Ajustar por variaciones paramétricas:<br>- Tasas previsionales históricas<br>- Impuestos históricos<br>- Descuentos judiciales históricos]
+    Adjust --> Final[Fin: Monto retroactivo total a pagar/<br>recuperar con desglose mensual]
 
     style Start fill:#e1f5fe
     style Final fill:#e8f5e8
@@ -534,20 +534,20 @@ interface ComponenteTabla {
 
 ```mermaid
 flowchart TD
-    Start[Inicio: Período retroactivo a calcular] --> Identify[Identificar período exacto:<br/>Fechas inicio y fin con precisión diaria]
-    Identify --> Search[Buscar en repositorio histórico<br/>tablas vigentes para cada fecha]
-    Search --> Categorize[Categorizar tablas encontradas:<br/>- Tablas base por grado<br/>- Tablas de asignaciones<br/>- Tablas de reajustes<br/>- Tablas de conversión]
-    Categorize --> Check{¿Todas las tablas necesarias<br/>están disponibles?}
-    Check -- No --> Gap[Marcar brechas en datos históricos<br/>y aplicar protocolo de estimación]
-    Check -- Sí --> ForEach[Para cada subperíodo con<br/>misma combinación de tablas]
+    Start[Inicio: Período retroactivo a calcular] --> Identify[Identificar período exacto:<br>Fechas inicio y fin con precisión diaria]
+    Identify --> Search[Buscar en repositorio histórico<br>tablas vigentes para cada fecha]
+    Search --> Categorize[Categorizar tablas encontradas:<br>- Tablas base por grado<br>- Tablas de asignaciones<br>- Tablas de reajustes<br>- Tablas de conversión]
+    Categorize --> Check{¿Todas las tablas necesarias<br>están disponibles?}
+    Check -- No --> Gap[Marcar brechas en datos históricos<br>y aplicar protocolo de estimación]
+    Check -- Sí --> ForEach[Para cada subperíodo con<br>misma combinación de tablas]
     Gap --> ForEach
-    ForEach --> Select[Seleccionar combinación correcta:<br/>Base + asignaciones + reajustes + conversión]
-    Select --> Apply[Aplicar secuencialmente:<br/>1. Aplicar tabla base<br/>2. Sumar asignaciones<br/>3. Aplicar reajustes<br/>4. Aplicar conversión si corresponde]
-    Apply --> Calculate[Calcular valores remunerativos<br/>para cada componente en subperíodo]
+    ForEach --> Select[Seleccionar combinación correcta:<br>Base + asignaciones + reajustes + conversión]
+    Select --> Apply[Aplicar secuencialmente:<br>1. Aplicar tabla base<br>2. Sumar asignaciones<br>3. Aplicar reajustes<br>4. Aplicar conversión si corresponde]
+    Apply --> Calculate[Calcular valores remunerativos<br>para cada componente en subperíodo]
     Calculate --> Next{¿Siguiente subperíodo?}
     Next -- Sí --> ForEach
-    Next -- No --> Validate[Validar resultados:<br/>- Consistencia con referencias históricas<br/>- Coherencia interna entre períodos<br/>- Respeto de límites legales históricos]
-    Validate --> Final[Fin: Valores históricos<br/>reconstruidos con precisión]
+    Next -- No --> Validate[Validar resultados:<br>- Consistencia con referencias históricas<br>- Coherencia interna entre períodos<br>- Respeto de límites legales históricos]
+    Validate --> Final[Fin: Valores históricos<br>reconstruidos con precisión]
 
     style Start fill:#e1f5fe
     style Final fill:#e8f5e8
