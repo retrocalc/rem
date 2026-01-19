@@ -12,6 +12,7 @@ El sistema proporciona una plataforma unificada para gestionar todo el ciclo de 
 
 **Valor Estratégico**:
 - Reducción de errores manuales en cálculos complejos
+- Calculo Automatizado de pagos Retroactivos (ascensos, reconocimiento de bienos o asignaciones)
 - Cumplimiento automático con normativas institucionales
 - Centralización de información para auditoría y reportes
 - Optimización del tiempo del personal administrativo
@@ -144,17 +145,11 @@ Cada organización mantiene:
 
 ## Soporte y Mantenimiento
 
-Para asistencia técnica o consultas sobre la implementación del sistema, contactar al equipo de desarrollo.
-
----
+Para asistencia técnica o consultas sobre la implementación del sistema, contactar al equipo de desarrollo (retro.calc.137@gmail.com).
 
 **Sistema diseñado para garantizar precisión, cumplimiento y eficiencia en la gestión de remuneraciones institucionales.**
 
-retro.calc.137@gmail.com
 *Última actualización: Enero 2026*
-<<<<<<< HEAD
-
----
 
 # Estudio de los Sistemas de Pago de Remuneraciones de las Instituciones Públicas
 
@@ -185,8 +180,5 @@ El estudio fue desarrollado como parte del proyecto de implementación del **Sis
 9. [Implementación y Adopción](estudio/09-implementacion-adopcion.md) - Estrategias de despliegue, capacitación y gestión del cambio.
 10. [Conclusiones y Recomendaciones](estudio/10-conclusiones-recomendaciones.md) - Síntesis de hallazgos y recomendaciones para decisores.
 
----
 
 *Este estudio forma parte del desarrollo del Sistema Integrado de Gestión de Remuneraciones Institucionales.*
-=======
->>>>>>> a8a1d86d84a1093a03e3c3363cb77f6f39ceab8a
