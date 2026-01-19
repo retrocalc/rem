@@ -13,9 +13,12 @@ export class SistemaJsonRepository implements IParametroRepository {
     await this.storage.cargar();
   }
 
-  async obtenerParametros(): Promise<ParametrosControl> {
-    const data = this.storage.obtenerData();
-    return data.parametros;
+  async obtenerParametros(usuario?: string): Promise<ParametrosControl> {
+    return this.storage.obtenerParametros(usuario);
+  }
+
+  async obtenerParametrosPorUsuario(usuario: string): Promise<ParametrosControl> {
+    return this.storage.obtenerParametrosPorUsuario(usuario);
   }
 
   async obtenerInstituciones(): Promise<Record<string, Institucion>> {
@@ -23,22 +26,22 @@ export class SistemaJsonRepository implements IParametroRepository {
     return data.instituciones || {};
   }
 
-  async actualizarParametros(parametros: ParametrosControl): Promise<void> {
+  async actualizarParametros(usuario: string, parametros: ParametrosControl): Promise<void> {
     await this.storage.realizarOperacionConBackup(async () => {
       const data = this.storage.obtenerData();
-      data.parametros = parametros;
+      data.parametros[usuario] = parametros;
       this.storage.actualizarData(data);
     });
   }
 
-  async obtenerMesAnioProceso(): Promise<string> {
-    const parametros = await this.obtenerParametros();
+  async obtenerMesAnioProceso(usuario?: string): Promise<string> {
+    const parametros = await this.obtenerParametros(usuario);
     return parametros.mes_anio_proceso;
   }
 
-  async actualizarMesAnioProceso(mesAnio: string): Promise<void> {
-    const parametrosActuales = await this.obtenerParametros();
-    await this.actualizarParametros({
+  async actualizarMesAnioProceso(usuario: string, mesAnio: string): Promise<void> {
+    const parametrosActuales = await this.obtenerParametros(usuario);
+    await this.actualizarParametros(usuario, {
       ...parametrosActuales,
       mes_anio_proceso: mesAnio
     });

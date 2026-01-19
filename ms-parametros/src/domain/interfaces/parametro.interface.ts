@@ -12,7 +12,7 @@ export interface Institucion {
 }
 
 export interface SistemaParametrosData {
-  parametros: ParametrosControl;
+  parametros: Record<string, ParametrosControl>; // Clave: usuario (ej: "cch", "rbv")
   instituciones?: {
     [key: string]: Institucion;
   };

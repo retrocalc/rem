@@ -73,11 +73,12 @@ export class HttpClient {
     throw lastError;
   }
 
-   async get<T>(path: string): Promise<T> {
+   async get<T>(path: string, headers?: Record<string, string>): Promise<T> {
      console.log(`[HttpClient.get] ${this.client.defaults.baseURL}${path}`);
      return this.requestWithRetry<T>(
        async () => {
-         const response = await this.client.get<T>(path);
+         const config = headers ? { headers } : {};
+         const response = await this.client.get<T>(path, config);
          console.log(`[HttpClient.get] Respuesta recibida: ${response.status} ${response.statusText}`);
          return response.data;
        },
@@ -85,11 +86,12 @@ export class HttpClient {
      );
    }
 
-   async post<T>(path: string, data: unknown): Promise<T> {
+   async post<T>(path: string, data: unknown, headers?: Record<string, string>): Promise<T> {
      console.log(`[HttpClient.post] ${this.client.defaults.baseURL}${path}`, JSON.stringify(data).substring(0, 200));
      return this.requestWithRetry<T>(
        async () => {
-         const response = await this.client.post<T>(path, data);
+         const config = headers ? { headers } : {};
+         const response = await this.client.post<T>(path, data, config);
          console.log(`[HttpClient.post] Respuesta recibida: ${response.status} ${response.statusText}`);
          return response.data;
        },
@@ -97,11 +99,12 @@ export class HttpClient {
      );
    }
 
-   async put<T>(path: string, data: unknown): Promise<T> {
+   async put<T>(path: string, data: unknown, headers?: Record<string, string>): Promise<T> {
      console.log(`[HttpClient.put] ${this.client.defaults.baseURL}${path}`, JSON.stringify(data).substring(0, 200));
      return this.requestWithRetry<T>(
        async () => {
-         const response = await this.client.put<T>(path, data);
+         const config = headers ? { headers } : {};
+         const response = await this.client.put<T>(path, data, config);
          console.log(`[HttpClient.put] Respuesta recibida: ${response.status} ${response.statusText}`);
          return response.data;
        },
@@ -109,11 +112,12 @@ export class HttpClient {
      );
    }
 
-   async delete<T>(path: string): Promise<T> {
+   async delete<T>(path: string, headers?: Record<string, string>): Promise<T> {
      console.log(`[HttpClient.delete] ${this.client.defaults.baseURL}${path}`);
      return this.requestWithRetry<T>(
        async () => {
-         const response = await this.client.delete<T>(path);
+         const config = headers ? { headers } : {};
+         const response = await this.client.delete<T>(path, config);
          console.log(`[HttpClient.delete] Respuesta recibida: ${response.status} ${response.statusText}`);
          return response.data;
        },

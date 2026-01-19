@@ -17,7 +17,8 @@ export class CalcRulesController {
   async calcular(req: Request, res: Response) {
     try {
       const attributes: ContratoAttributes = req.body;
-      console.log('CalcRulesController.calcular recibió atributos:', JSON.stringify(attributes));
+      const usuario = req.headers['x-user'] as string | undefined;
+      console.log('CalcRulesController.calcular recibió atributos:', JSON.stringify(attributes), usuario ? `usuario: ${usuario}` : '');
       
       // Validar entrada básica
       if (!attributes || typeof attributes !== 'object') {
@@ -26,7 +27,7 @@ export class CalcRulesController {
         });
       }
 
-      const resultado = await this.calcRulesService.calcular(attributes);
+      const resultado = await this.calcRulesService.calcular(attributes, usuario);
       console.log('CalcRulesController.calcular resultado:', JSON.stringify(resultado).substring(0, 200));
       return res.json(resultado);
     } catch (error: unknown) {
@@ -43,9 +44,10 @@ export class CalcRulesController {
     }
   }
 
-  async obtenerRules(_req: Request, res: Response) {
+  async obtenerRules(req: Request, res: Response) {
     try {
-      const rules = await this.calcRulesService.getRules();
+      const usuario = req.headers['x-user'] as string | undefined;
+      const rules = await this.calcRulesService.getRules(undefined, usuario);
       
       return res.json({
         rules,
@@ -57,10 +59,11 @@ export class CalcRulesController {
     }
   }
 
-  async refrescar(_req: Request, res: Response) {
+  async refrescar(req: Request, res: Response) {
     try {
-      await this.calcRulesService.refrescar();
-      const rules = await this.calcRulesService.getRules();
+      const usuario = req.headers['x-user'] as string | undefined;
+      await this.calcRulesService.refrescar(usuario);
+      const rules = await this.calcRulesService.getRules(undefined, usuario);
       
       return res.json({
         status: 'ok',
@@ -78,9 +81,10 @@ export class CalcRulesController {
     }
   }
 
-  async obtenerRulesCrudo(_req: Request, res: Response) {
+  async obtenerRulesCrudo(req: Request, res: Response) {
     try {
-      const rules = await this.calcRulesService.getRulesCrudo();
+      const usuario = req.headers['x-user'] as string | undefined;
+      const rules = await this.calcRulesService.getRulesCrudo(undefined, usuario);
       
       return res.json({
         rules,
@@ -94,6 +98,7 @@ export class CalcRulesController {
   async guardarRules(req: Request, res: Response) {
     try {
       const { rules } = req.body;
+      const usuario = req.headers['x-user'] as string | undefined;
       
       if (!rules || typeof rules !== 'object') {
         return res.status(400).json({ 
@@ -101,7 +106,7 @@ export class CalcRulesController {
         });
       }
 
-      await this.calcRulesService.guardarRules(rules);
+      await this.calcRulesService.guardarRules(rules, undefined, usuario);
       
       return res.json({
         status: 'ok',
@@ -118,10 +123,11 @@ export class CalcRulesController {
     }
   }
 
-  async health(_req: Request, res: Response) {
+  async health(req: Request, res: Response) {
     try {
+      const usuario = req.headers['x-user'] as string | undefined;
       // Verificar que las reglas están cargadas
-      const rules = await this.calcRulesService.getRules();
+      const rules = await this.calcRulesService.getRules(undefined, usuario);
       
       return res.json({
         status: 'healthy',

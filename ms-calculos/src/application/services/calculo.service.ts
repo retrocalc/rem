@@ -58,7 +58,7 @@ export class CalculoService {
      }
    }
 
-   async procesarRemuneraciones(tamanoLote: number = 100, delayEntreLotes: number = 100, onProgress?: (message: string) => void): Promise<CalculoEntity[]> {
+   async procesarRemuneraciones(tamanoLote: number = 100, delayEntreLotes: number = 100, onProgress?: (message: string) => void, usuario?: string): Promise<CalculoEntity[]> {
       const tiempoInicio = Date.now();
       // Logger que puede enviar progreso a la respuesta HTTP o usar console.log
       const logger = {
@@ -99,7 +99,7 @@ export class CalculoService {
     logger.info('[CalculoService.procesarRemuneraciones] FASE 2: Obteniendo parámetros actuales...');
     let parametros, mesProceso;
     try {
-      parametros = await this.parametrosClient.obtenerParametros();
+       parametros = await this.parametrosClient.obtenerParametros(usuario);
       mesProceso = parametros.mes_anio_proceso;
       logger.info(`[CalculoService.procesarRemuneraciones] ✓ Parámetros obtenidos: Mes=${mesProceso}, Institución=${parametros.institucion}`);
       logger.info(`[CalculoService.procesarRemuneraciones] Porcentaje retención honorarios: ${parametros.porcentaje_retencion_honorarios}`);
@@ -210,7 +210,7 @@ export class CalculoService {
               monto_bruto: contrato.monto_bruto,
               porcentaje_retencion_honorarios: parametros.porcentaje_retencion_honorarios,
               ...atributosEmpleado
-            });
+            }, usuario);
             
             logger.info(`[CalculoService.procesarRemuneraciones] [Lote ${loteIndex}] ✓ Resultado cálculo obtenido`);
             logger.info(`[CalculoService.procesarRemuneraciones] [Lote ${loteIndex}] Detalles: ${JSON.stringify(resultado.detalles || {}).substring(0, 200)}...`);
@@ -263,7 +263,7 @@ export class CalculoService {
               grado: contrato.grado,
               cantidad_bienios: contrato.cantidad_bienios,
               ...atributosEmpleado
-            });
+            }, usuario);
             
             logger.info(`[CalculoService.procesarRemuneraciones] [Lote ${loteIndex}] ✓ Resultado cálculo obtenido`);
             logger.info(`[CalculoService.procesarRemuneraciones] [Lote ${loteIndex}] Sueldo base: ${resultado.sueldo_base}, Bienios: ${resultado.bienios}, Total: ${resultado.total}`);
@@ -312,7 +312,7 @@ export class CalculoService {
               grado: contrato.grado,
               cantidad_bienios: contrato.cantidad_bienios,
               ...atributosEmpleado
-            });
+            }, usuario);
             
             logger.info(`[CalculoService.procesarRemuneraciones] [Lote ${loteIndex}] ✓ Resultado cálculo obtenido`);
             logger.info(`[CalculoService.procesarRemuneraciones] [Lote ${loteIndex}] Sueldo base: ${resultado.sueldo_base}, Bienios: ${resultado.bienios}, Total: ${resultado.total}`);
@@ -421,7 +421,7 @@ export class CalculoService {
     return calculosCreados;
   }
 
-    async procesarRemuneracionPorContrato(contratoId: string): Promise<CalculoEntity> {
+    async procesarRemuneracionPorContrato(contratoId: string, usuario?: string): Promise<CalculoEntity> {
       console.log(`[CalculoService.procesarRemuneracionPorContrato] Iniciando procesamiento para contrato ${contratoId}`);
       console.log('[CalculoService.procesarRemuneracionPorContrato] VERSION CON ATRIBUTOS EMPLEADO');
       // Refrescar datos externos antes de procesar
@@ -429,7 +429,7 @@ export class CalculoService {
       console.log(`[CalculoService.procesarRemuneracionPorContrato] Datos externos refrescados para contrato ${contratoId}`);
       
       // Obtener parámetros actuales
-      const parametros = await this.parametrosClient.obtenerParametros();
+       const parametros = await this.parametrosClient.obtenerParametros(usuario);
       console.log(`[CalculoService.procesarRemuneracionPorContrato] Parámetros obtenidos: institución ${parametros.institucion}, mes ${parametros.mes_anio_proceso}`);
      const mesProceso = parametros.mes_anio_proceso;
 
@@ -477,7 +477,7 @@ export class CalculoService {
           monto_bruto: contrato.monto_bruto,
           porcentaje_retencion_honorarios: parametros.porcentaje_retencion_honorarios,
           ...atributosEmpleado
-        });
+        }, usuario);
         // Extraer valores de detalles
         const detalles = resultado.detalles || {};
         const montoRetencion = detalles.monto_retencion_honorarios?.valor ?? contrato.monto_bruto * parametros.porcentaje_retencion_honorarios;
@@ -522,7 +522,7 @@ export class CalculoService {
           grado: contrato.grado,
           cantidad_bienios: contrato.cantidad_bienios,
           ...atributosEmpleado
-        });
+        }, usuario);
         // eslint-disable-next-line no-console
         console.log(`Resultado cálculo reglas: sueldo_base=${resultado.sueldo_base}, bienios=${resultado.bienios}`);
         
@@ -566,7 +566,7 @@ export class CalculoService {
           grado: contrato.grado,
           cantidad_bienios: contrato.cantidad_bienios,
           ...atributosEmpleado
-        });
+        }, usuario);
         // eslint-disable-next-line no-console
         console.log(`Resultado cálculo reglas: sueldo_base=${resultado.sueldo_base}, bienios=${resultado.bienios}`);
         
@@ -595,9 +595,9 @@ export class CalculoService {
     }
   }
 
-  async cerrarMes(): Promise<ParametrosControl> {
+   async cerrarMes(usuario?: string): Promise<ParametrosControl> {
     // Llamar al cliente de parámetros para cerrar el mes
-    return this.parametrosClient.cerrarMes();
+     return this.parametrosClient.cerrarMes(usuario);
   }
 
   async obtenerCalculoPorId(id: string): Promise<CalculoEntity> {
@@ -667,7 +667,8 @@ export class CalculoService {
   async calcularParaEmpleado(
     empleadoId: string,
     mesProceso: string,
-    parametrosAdicionales: Record<string, any> = {}
+    parametrosAdicionales: Record<string, any> = {},
+    usuario?: string
   ): Promise<{
     id: string;
     empleado_id: string;
@@ -682,14 +683,16 @@ export class CalculoService {
     console.log(`[CalculoService.calcularParaEmpleado] Calculando para empleado ${empleadoId}, mes ${mesProceso}`);
     
     // Obtener parámetros actuales (institución, porcentajes)
-    const parametros = await this.parametrosClient.obtenerParametros();
+     const parametros = await this.parametrosClient.obtenerParametros(usuario);
     console.log(`[CalculoService.calcularParaEmpleado] Institución activa: ${parametros.institucion}`);
     
     // Obtener todos los contratos activos y filtrar por empleado
     const contratos = await this.contratosClient.obtenerContratosActivosGenerico();
+    console.log(`[CalculoService.calcularParaEmpleado] Total contratos activos obtenidos: ${contratos.length} para institución ${parametros.institucion}`);
     const contratosEmpleado = contratos.filter(c => c.empleadoId === empleadoId);
     
     if (contratosEmpleado.length === 0) {
+      console.log(`[CalculoService.calcularParaEmpleado] Contratos obtenidos:`, contratos.map(c => ({ id: c.id, empleadoId: c.empleadoId, tipo: c.tipo })));
       throw new Error(`El empleado ${empleadoId} no tiene contratos activos`);
     }
     
@@ -740,12 +743,12 @@ export class CalculoService {
           const montoBruto = parametrosAdicionales.monto_bruto || contrato.monto_bruto;
           const porcentajeRetencion = parametrosAdicionales.porcentaje_retencion_honorarios || parametros.porcentaje_retencion_honorarios;
           
-           const resultado = await this.calcRulesClient.calcular({
-             institucion: parametros.institucion,
-             monto_bruto: montoBruto,
-             porcentaje_retencion_honorarios: porcentajeRetencion,
-             ...atributosFiltrados
-           });
+            const resultado = await this.calcRulesClient.calcular({
+              institucion: parametros.institucion,
+              monto_bruto: montoBruto,
+              porcentaje_retencion_honorarios: porcentajeRetencion,
+              ...atributosFiltrados
+            }, usuario);
           
           // Extraer valores del resultado
           const montoBase = resultado.detalles?.monto_bruto_honorario?.valor || montoBruto;
@@ -774,13 +777,13 @@ export class CalculoService {
           const cantidadBienios = parametrosAdicionales.cantidad_bienios || contrato.cantidad_bienios;
           const cargo = parametrosAdicionales.cargo || contrato.cargo;
           
-           const resultado = await this.calcRulesClient.calcular({
-             institucion: parametros.institucion,
-             cargo: cargo,
-             grado: contrato.grado,
-             cantidad_bienios: cantidadBienios,
-             ...atributosFiltrados
-           });
+            const resultado = await this.calcRulesClient.calcular({
+              institucion: parametros.institucion,
+              cargo: cargo,
+              grado: contrato.grado,
+              cantidad_bienios: cantidadBienios,
+              ...atributosFiltrados
+            }, usuario);
           
            // Extraer valores del resultado
            const montoBase = resultado.sueldo_base;
