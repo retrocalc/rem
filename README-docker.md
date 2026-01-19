@@ -17,7 +17,6 @@ Cada componente (microservicios y gateways) tiene su propio Dockerfile. La orque
 | ms-empleados | 3002 | Microservicio de empleados |
 | ms-contratos | 3003 | Microservicio de contratos |
 | ms-calculos | 3004 | Microservicio de cálculos |
-| ms-calc-rules | 3005 | Microservicio de reglas de cálculo |
 | redis | 6379 | Cache Redis (opcional) |
 
 ## Requisitos
