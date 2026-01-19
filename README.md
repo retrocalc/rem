@@ -152,6 +152,7 @@ Para asistencia técnica o consultas sobre la implementación del sistema, conta
 
 retro.calc.137@gmail.com
 *Última actualización: Enero 2026*
+<<<<<<< HEAD
 
 ---
 
@@ -187,3 +188,5 @@ El estudio fue desarrollado como parte del proyecto de implementación del **Sis
 ---
 
 *Este estudio forma parte del desarrollo del Sistema Integrado de Gestión de Remuneraciones Institucionales.*
+=======
+>>>>>>> a8a1d86d84a1093a03e3c3363cb77f6f39ceab8a
