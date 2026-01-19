@@ -2,7 +2,7 @@
 
 ## Visión General
 
-Sistema centralizado para la administración y cálculo de remuneraciones del personal de instituciones estatales, diseñado específicamente para organizaciones con estructuras salariales complejas como minusterios, fuerzas armadas y de orden, municipalidades, etc.
+Sistema centralizado para la administración y cálculo de remuneraciones del personal de instituciones estatales, diseñado específicamente para organizaciones con estructuras salariales complejas como ministerios, diversas ramas de las fuerzas armadas y de orden, municipalidades, subsecretarias, etc.
 
 El sistema proporciona una plataforma unificada para gestionar todo el ciclo de vida de las remuneraciones, desde el registro de empleados y contratos hasta el cálculo automático de pagos según las normativas institucionales específicas. **Este sistema está fundamentado en un [estudio exhaustivo](#estudio-de-los-sistemas-de-pago-de-remuneraciones-de-las-instituciones-públicas) sobre las complejidades remunerativas del sector público chileno.**
 
