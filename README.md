@@ -247,7 +247,21 @@ La automatización integral no es una opción tecnológica sino una necesidad es
 10. [Implementación y Adopción](estudio/10-implementacion-adopcion.md) - Estrategias de despliegue, capacitación y gestión del cambio.
 11. [Beneficios del Reconocimiento Automático de Textos para Identificación de Datos en Documentos Oficiales](estudio/11-beneficios-reconocimiento-textos.md) - Ventajas de la automatización documental en procesos remunerativos.
 12. [Conclusiones y Recomendaciones](estudio/12-conclusiones-recomendaciones.md) - Síntesis de hallazgos y recomendaciones para decisores.
-13. [Bibliografía y Referencias](estudio/13-bibliografia.md) - Fuentes normativas, legales, técnicas y académicas citadas en el estudio.
+ 13. [Bibliografía y Referencias](estudio/13-bibliografia.md) - Fuentes normativas, legales, técnicas y académicas citadas en el estudio.
 
+## Materiales Adicionales
+
+- **[Resumen Ejecutivo](estudio/resumen-ejecutivo.md)** - Versión condensada para tomadores de decisiones.
+- **[Presentación](estudio/presentacion.md)** - Esquema para presentaciones a stakeholders.
+- **[Herramientas de distribución](estudio/Makefile)** - Makefile para generar versiones PDF, DOCX y HTML del estudio.
+
+### Generación de Documentos
+En el directorio `estudio/` ejecute:
+```bash
+make pdf        # Generar PDF (requiere LaTeX)
+make docx       # Generar documento Word
+make html       # Generar versión HTML
+make resumen    # Generar solo el resumen ejecutivo
+```
 
 *Este estudio forma parte del desarrollo del Sistema Integrado de Gestión de Remuneraciones Institucionales.*
