@@ -1,10 +1,10 @@
-# 3. Complejidades del Cálculo Retroactivo
+# 4. Complejidades del Cálculo Retroactivo
 
-## 3.1. La Realidad Crítica de los Cálculos Retroactivos Masivos en el Sector Público
+## 4.1. La Realidad Crítica de los Cálculos Retroactivos Masivos en el Sector Público
 
 Los cálculos retroactivos para pagos de reconocimiento de asignaciones, ascensos u otros beneficios constituyen uno de los problemas más complejos, riesgosos y frecuentemente subestimados en la administración remunerativa del sector público chileno, incluyendo ministerios, servicios de salud, educación, municipalidades, gobiernos regionales, fuerzas armadas, de orden y seguridad, y todas las instituciones públicas. Esta situación, lejos de ser excepcional, representa una constante estructural que expone a las instituciones a riesgos financieros, legales y reputacionales de primera magnitud.
 
-### 3.1.1. Características Estructurales que Agravan la Problemática
+### 4.1.1. Características Estructurales que Agravan la Problemática
 
 #### 1. Naturaleza Masiva y Colectiva de los Eventos Retroactivos
 - **Resoluciones de alcance colectivo**: Una sola resolución administrativa o fallo judicial puede afectar simultáneamente a cientos o miles de funcionarios.
@@ -37,7 +37,7 @@ Los cálculos retroactivos para pagos de reconocimiento de asignaciones, ascenso
 - **Dispersión de responsabilidades**: Auditoría interna se enfoca en ejecución presupuestaria, no en validación técnica de cálculos complejos.
 - **Imposibilidad de revisión exhaustiva**: Revisar manualmente miles de cálculos retroactivos requeriría años de trabajo de equipos especializados.
 
-### 3.1.2. Consecuencias Institucionales de la Situación Actual
+### 4.1.2. Consecuencias Institucionales de la Situación Actual
 
 #### Impacto Financiero y Presupuestario
 - **Sobrepagos y subpagos sistemáticos**: Errores que generan obligaciones de pago retroactivo o recuperación de sobrepagos, afectando flujo de caja.
@@ -59,7 +59,7 @@ Los cálculos retroactivos para pagos de reconocimiento de asignaciones, ascenso
 - **Drenaje de recursos estratégicos**: Expertos en normativa remunerativa dedicados a cálculos rutinarios en lugar de análisis y mejora de procesos.
 - **Falta de información para toma de decisiones**: Cálculos imprecisos generan datos erróneos para planificación de masa salarial, proyecciones previsionales, análisis de equidad.
 
-### 3.1.3. La Insuficiencia de las Soluciones Burocráticas Tradicionales
+### 4.1.3. La Insuficiencia de las Soluciones Burocráticas Tradicionales
 
 #### Limitaciones Estructurales del Enfoque Actual
 - **Tramitación burocrática inevitable**: Resoluciones de reconocimiento deben seguir circuitos administrativos que consumen meses, pero no resuelven el problema técnico del cálculo.
@@ -72,7 +72,7 @@ Los cálculos retroactivos para pagos de reconocimiento de asignaciones, ascenso
 - **Falsa seguridad de la revisión por pares**: En entornos de alta complejidad, múltiples revisores pueden cometer mismos errores por compartir supuestos incorrectos.
 - **Limitaciones cognitivas humanas**: La mente humana no está optimizada para manejar simultáneamente decenas de variables temporales, normativas y matemáticas.
 
-### 3.1.4. La Automatización como Única Solución Viable y Confiable
+### 4.1.4. La Automatización como Única Solución Viable y Confiable
 
 #### Fundamentos de la Solución Automatizada
 - **Capacidad de procesamiento masivo**: Sistemas pueden procesar miles de cálculos simultáneamente con misma precisión que uno.
@@ -99,7 +99,7 @@ Los cálculos retroactivos para pagos de reconocimiento de asignaciones, ascenso
 - **Expandir por complejidad**: Iniciar con componentes más simples (sueldo base) e incorporar progresivamente complejidad (impuestos, descuentos judiciales).
 - **Capacitación y cambio cultural**: Formar equipos en nuevo paradigma de supervisión de sistemas automatizados.
 
-### 3.1.5. Conclusión: Imperativo de Transformación
+### 4.1.5. Conclusión: Imperativo de Transformación
 
 La situación actual de cálculos retroactivos en el sector público chileno representa un problema técnico de primera magnitud agravado por limitaciones operativas, riesgos legales crecientes y costos ocultos significativos. La continuidad del enfoque manual-artesanal no es sostenible ni financiera, ni legal, ni operativamente.
 
@@ -112,7 +112,7 @@ La situación actual de cálculos retroactivos en el sector público chileno rep
 
 El siguiente capítulo detalla los componentes técnicos específicos de este sistema automatizado, comenzando con el caso más frecuente y complejo: el reconocimiento retroactivo de ascensos.
 
-## 3.2. Reconocimiento de ascensos y su impacto remunerativo
+## 4.2. Reconocimiento de ascensos y su impacto remunerativo
 
 El cálculo retroactivo de ascensos representa uno de los desafíos técnicos más complejos en administración remunerativa pública, requiriendo la reconstrucción histórica precisa de trayectorias profesionales, la aplicación de múltiples tablas salariales según fechas de vigencia y la conciliación meticulosa con períodos ya pagados, donde errores menores pueden generar diferencias acumulativas significativas y consecuencias legales.
 
@@ -280,7 +280,7 @@ interface CalculoRetroactivoAscenso {
 
 *El cálculo retroactivo de ascensos ejemplifica cómo la complejidad técnica en administración remunerativa pública requiere no solo expertise especializado sino también herramientas tecnológicas sofisticadas que puedan manejar dimensiones temporales, normativas y operativas simultáneamente, transformando un proceso propenso a errores en uno predecible, auditable y confiable.*
 
-## 3.3. Acreditación de bienios y antigüedad laboral
+## 4.3. Acreditación de bienios y antigüedad laboral
 
 El reconocimiento de períodos de servicio que otorgan derecho a incrementos salariales por antigüedad (bienios) constituye un desafío técnico-administrativo de primera magnitud en remuneraciones públicas, donde la precisión en el cómputo de tiempo laboral determina no solo el monto correcto de remuneraciones actuales sino también la reconstrucción histórica para cálculos retroactivos, con implicancias en derechos previsionales y trayectorias profesionales completas.
 
@@ -446,7 +446,7 @@ interface PeriodoServicio {
 
 *La acreditación precisa de bienios y antigüedad laboral ejemplifica cómo la administración remunerativa pública requiere equilibrar rigor técnico, cumplimiento normativo y justicia procedimental, donde la automatización no reemplaza el juicio experto sino que lo potencia con herramientas que manejan complejidad, aseguran consistencia y generan transparencia.*
 
-## 3.4. Aplicación de tablas históricas de asignaciones
+## 4.4. Aplicación de tablas históricas de asignaciones
 
 El mantenimiento y aplicación correcta de tablas salariales históricas constituye un requisito técnico fundamental para cálculos retroactivos precisos, donde la capacidad de reconstruir exactamente qué valores estaban vigentes en cada momento del pasado determina la legalidad y equidad de diferencias remunerativas que pueden abarcar décadas, involucrando ajustes por inflación, reajustes sectoriales y transformaciones estructurales en la administración pública.
 
@@ -649,7 +649,7 @@ interface MotorTablasHistoricas {
 
 *La aplicación correcta de tablas históricas de asignaciones representa la intersección entre rigor archivístico, precisión técnica y justicia administrativa, donde la tecnología actúa como puente entre el pasado documental y el presente operativo, asegurando que derechos adquiridos en diferentes momentos históricos sean reconocidos y valorizados con exactitud matemática y respaldo documental completo.*
 
-## 3.5. Variación mensual de impuestos y descuentos legales
+## 4.5. Variación mensual de impuestos y descuentos legales
 
 Los cálculos retroactivos de remuneraciones requieren considerar no solo la variación mensual de ingresos brutos sino también la fluctuación constante de impuestos, cotizaciones previsionales y otros descuentos legales que cambian periódicamente, transformando un cálculo unidimensional en un proceso multidimensional donde cada mes del período retroactivo puede tener combinaciones únicas de parámetros fiscales, previsionales y legales que afectan significativamente el neto a pagar.
 

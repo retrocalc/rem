@@ -1,6 +1,6 @@
-# 4. Procedimiento Integral de Cálculo de Remuneraciones Públicas
+# 3. Procedimiento Integral de Cálculo de Remuneraciones Públicas
 
-## 4.1. Fundamentos del Cálculo Remunerativo en el Sector Público
+## 3.1. Fundamentos del Cálculo Remunerativo en el Sector Público
 
 El cálculo de remuneraciones en el sector público chileno constituye un proceso técnico-administrativo de alta complejidad que integra múltiples componentes normativos, previsionales, tributarios y contractuales en un flujo estructurado que debe garantizar precisión matemática, cumplimiento legal absoluto y equidad en la distribución de recursos públicos. Este capítulo detalla el procedimiento completo desde la determinación de los haberes brutos hasta el cálculo del líquido a pagar, considerando todas las interacciones, prioridades y particularidades que caracterizan los sistemas remunerativos estatales.
 
@@ -20,7 +20,7 @@ El cálculo de remuneraciones en el sector público chileno constituye un proces
 4. **Dimensión tributaria**: Aplicación de impuestos, retenciones y obligaciones fiscales
 5. **Dimensión contractual**: Respeto a condiciones específicas de contratos individuales y colectivos
 
-## 4.2. Componentes Estructurales de las Remuneraciones Públicas
+## 3.2. Componentes Estructurales de las Remuneraciones Públicas
 
 ### Haberes o Ingresos Brutos
 
@@ -69,7 +69,7 @@ El cálculo de remuneraciones en el sector público chileno constituye un proces
 - **Régimen de Cajas Especiales**: Base específica para FF.AA., policías, instituciones con sistemas propios
 - **Personal a Honorarios**: Tratamiento especial según ley 19.863 (rentas asimiladas a salario)
 
-## 4.3. Sistemas Previsionales y de Salud en el Cálculo Remunerativo
+## 3.3. Sistemas Previsionales y de Salud en el Cálculo Remunerativo
 
 ### Arquitectura de los Sistemas de Protección Social
 
@@ -144,7 +144,7 @@ seguro_cesantia = base_imponible * 0.03
 - **Licencias médicas**: Tratamiento especial de cotizaciones durante incapacidades
 - **Bonos y beneficios variables**: Impacto diferenciado en base imponible según tipo
 
-## 4.4. Descuentos Legales y su Jerarquía de Aplicación
+## 3.4. Descuentos Legales y su Jerarquía de Aplicación
 
 ### Taxonomía de los Descuentos Remunerativos
 
@@ -240,7 +240,7 @@ flowchart TD
     Q --> R
     R -- Sí --> S[Aplicar Descuentos Voluntarios/Convencionales<br/>Cuotas sindicales, mutuales, etc.]
     R -- No --> T[Saltar descuentos voluntarios]
-    S --> U[Verificar Mínimo Vital<br/>No < 75% sueldo mínimo]
+    S -->     U[Verificar Mínimo Vital<br/>No &lt; 75% sueldo mínimo]
     T --> U
     U --> V[Fin: Remuneración Líquida a Pagar]
     
@@ -317,7 +317,7 @@ Cuando un funcionario tiene varias órdenes judiciales de descuento:
 flowchart TD
     Start[Inicio: Líquido Provisional Disponible] --> Check{Existen múltiples<br/>descuentos judiciales?}
     Check -- No --> ApplySingle[Aplicar único descuento<br/>respetando límites legales]
-    Check -- Sí --> Order[Ordenar por prioridad:<br/>1. Fecha notificación<br/>2. Tipo (alimentos > fiscal > comercial)]
+    Check -- Sí --> Order[Ordenar por prioridad:<br/>1. Fecha notificación<br/>2. Tipo (alimentos → fiscal → comercial)]
     Order --> Limits[Verificar límites por tipo:<br/>- Alimentos: ≤50% líquido<br/>- Fiscal: ≤50% líquido<br/>- Comercial: ≤30% líquido después alimentos]
     Limits --> Total[Calcular total solicitado:<br/>Suma todos los montos solicitados]
     Total --> Compare{Total ≤ Límite acumulativo 70%?}
@@ -418,7 +418,7 @@ flowchart TD
 - **Períodos incompletos**: Proporcionalidad por días trabajados
 - **Asignación familiar**: No constituye renta para efectos tributarios hasta cierto monto
 
-## 4.5. Flujos de Cálculo por Tipo de Institución
+## 3.5. Flujos de Cálculo por Tipo de Institución
 
 ### Administración Central (Ministerios y Servicios Públicos)
 
@@ -485,7 +485,7 @@ flowchart TD
   4. Aplicar cotizaciones según tipo de personal (municipal, salud, educación)
   5. Considerar fondos de diferentes fuentes en cálculo de haberes
 
-## 4.6. Validación, Control y Auditoría de Cálculos
+## 3.6. Validación, Control y Auditoría de Cálculos
 
 ### Mecanismos de Validación Interna
 
@@ -549,9 +549,9 @@ flowchart TD
 - **Auditoría automatizada**: Revisión sistemática de lotes de cálculos contra reglas predefinidas
 - **Generador de desgloses**: Producción automática de documentación detallada
 
-## 4.7. Ejemplo Práctico Integral de Cálculo con Descuentos Concurrentes
+## 3.7. Ejemplo Práctico Integral de Cálculo con Descuentos Concurrentes
 
-### 4.7.1. Caso de Estudio: Funcionario de Planta con Múltiples Descuentos
+### 3.7.1. Caso de Estudio: Funcionario de Planta con Múltiples Descuentos
 
 **Escenario**: Funcionario de planta de un ministerio, régimen IPS, afiliado a FONASA, con 15 años de servicio (7 bienios), con los siguientes componentes remunerativos y descuentos aplicables:
 
@@ -574,7 +574,7 @@ flowchart TD
 7. **Cuota Sindical**: $15.000 pactada en convenio colectivo
 8. **Aporte a Mutual**: $20.000 voluntario
 
-### 4.7.2. Cálculo Paso a Paso con Prioridad de Descuentos
+### 3.7.2. Cálculo Paso a Paso con Prioridad de Descuentos
 
 #### Paso 1: Determinación de la Remuneración Bruta
 ```
@@ -686,7 +686,7 @@ Sueldo mínimo = $500.000 (ilustrativo)
 Líquido final ($639.491) > $375.000 ✓ CUMPLE
 ```
 
-### 4.7.3. Análisis de Prioridades y Matices Normativos
+### 3.7.3. Análisis de Prioridades y Matices Normativos
 
 #### Interacción Compleja de Descuentos
 1. **Prevalencia absoluta de descuentos judiciales**: Las pensiones alimenticias tienen prioridad sobre cualquier otro descuento, incluido el impuesto único. En este caso, se aplican sobre el líquido provisional después de previsionales e impuestos.
@@ -720,7 +720,7 @@ Líquido final ($639.491) > $375.000 ✓ CUMPLE
 - Colación y movilización reducen base imponible, afectando cotizaciones previsionales pero no impuesto único directamente.
 - Asignación familiar hasta cierto monto es no imponible, beneficia al funcionario.
 
-### 4.7.4. Lecciones para Implementación Sistemática
+### 3.7.4. Lecciones para Implementación Sistemática
 
 #### Reglas de Negocio Críticas
 1. **Secuencia de aplicación**: Debe respetarse estrictamente: previsionales → impuestos → judiciales → voluntarios.
@@ -733,7 +733,7 @@ Líquido final ($639.491) > $375.000 ✓ CUMPLE
 - El funcionario debe recibir desglose completo que explique cada componente y descuento.
 - Sistema debe mantener histórico para auditorías y cálculos retroactivos.
 
-## 4.8. Conclusión: Hacia un Cálculo Remunerativo Perfecto
+## 3.8. Conclusión: Hacia un Cálculo Remunerativo Perfecto
 
 ### Principios para la Excelencia en Cálculos Remunerativos
 
