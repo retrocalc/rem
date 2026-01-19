@@ -13,6 +13,7 @@ El sistema proporciona una plataforma unificada para gestionar todo el ciclo de 
 **Valor Estratégico**:
 - Reducción de errores manuales en cálculos complejos
 - Calculo Automatizado de pagos Retroactivos (ascensos y asignaciones)
+- Generar eventos de auditoria en toda actualización manual de datos.
 - Cumplimiento automático con normativas institucionales
 - Centralización de información para auditoría y reportes
 - Optimización del tiempo del personal administrativo
@@ -155,7 +156,9 @@ Para asistencia técnica o consultas sobre la implementación del sistema, conta
 
 ## Contexto y Fundamentación
 
-Este estudio representa una investigación exhaustiva sobre los sistemas de remuneración en instituciones públicas chilenas, con énfasis en las fuerzas armadas y de orden. El análisis identifica las complejidades estructurales, normativas y operativas que enfrentan estas organizaciones, proponiendo una solución tecnológica integrada para modernizar y optimizar los procesos de cálculo y pago de remuneraciones.
+Este estudio representa una investigación exhaustiva sobre los sistemas de remuneración en instituciones públicas chilenas, con énfasis en la implementación automatizada del cálculo y procesamiento de los pagos retroactivos (sin intervención humana), lo que evitará posibles errores producto de procesos de cálculo altamente complejos que, hoy en día son realizados manualmente. El análisis identifica las complejidades estructurales, normativas y operativas que enfrentan estas organizaciones, proponiendo una solución tecnológica integrada para modernizar y optimizar los procesos de cálculo y pago de remuneraciones.
+
+Por otro lado, somos concientes que las limitación de recursos orientados a auditar la gran y compleja cantidad de información que mensualmente generan los procesos de cálculo de las remuneraciones, hacen imposible certificar que el 100% de los cálculos realizados manualmente, se han ajustado fidedignamente a la normativa y legalidad vigente.  
 
 El estudio fue desarrollado como parte del proyecto de implementación del **Sistema Integrado de Gestión de Remuneraciones Institucionales**, proporcionando el marco conceptual y técnico que fundamenta las decisiones de diseño arquitectónico y funcional del sistema.
 
