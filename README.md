@@ -164,9 +164,9 @@ El estudio fue desarrollado como parte del proyecto de implementación del **Sis
 
 ## Hallazgos Clave del Estudio
 
-- **Fragmentación extrema**: Más de 300 instituciones públicas operan con sistemas remunerativos aislados, generando duplicación de esfuerzos e inconsistencia normativa.
+- **Fragmentación extrema**: Más de 300 instituciones públicas operan con sistemas remunerativos aislados, con una gran cantidad de cálculos manuales y con deficientes controles y auditorias debido a la escases de recursos, la gran cantidad de informacón y la complejidad de procedimientos intrincados.
 - **Complejidad normativa acumulativa**: Reformas salariales sucesivas han creado capas de complejidad que dificultan la aplicación correcta de las normativas.
-- **Dependencia crítica de expertise tácito**: Sistemas actuales dependen del conocimiento no documentado de pocos especialistas, creando vulnerabilidades operacionales.
+- **Dependencia crítica de expertise tácito**: Sistemas actuales dependen del conocimiento no documentado de pocos especialistas, creando graves vulnerabilidades operacionales.
 - **Costo oculto monumental**: Procesos manuales, errores recurrentes y litigios representan un costo fiscal sustancial no cuantificado.
 - **Retroactividad como multiplicador de complejidad**: El cálculo retroactivo incrementa exponencialmente el esfuerzo de validación y genera riesgos de error compuesto.
 
