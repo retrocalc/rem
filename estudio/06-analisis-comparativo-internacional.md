@@ -183,58 +183,58 @@ La revisión comparativa internacional revela un conjunto de principios, herrami
 #### Sistemas de clasificación de puestos
 - **General Schedule (EEUU)**: Grados y pasos claros que facilitan comparaciones y progresión.
 - **Planos de Cargos (Brasil)**: Descripciones detalladas vinculadas a requisitos de formación y experiencia.
-- **Recomendación para Chile**: Sistema nacional de clasificación con perfiles por competencias y niveles.
+- **Característica del sistema integrado**: Soporte para clasificación con perfiles por competencias y niveles.
 
 #### Mecanismos de ajuste salarial
 - **Pay Review Bodies (Reino Unido)**: Órganos técnicos independientes que recomiendan ajustes basados en evidencia.
 - **Locality Pay (EEUU)**: Ajustes geográficos basados en costo de vida real.
-- **Recomendación para Chile**: Comisión técnica independiente para recomendaciones de ajuste, con complementos regionales.
+- **Característica del sistema integrado**: Configuración para ajustes basados en evidencia con complementos regionales.
 
 #### Plataformas de gestión integrada
 - **SIGN (Colombia)**: Sistema único de nómina pública con control en tiempo real.
 - **Data.gov (EEUU)**: Portal de transparencia con datos abiertos y accesibles.
-- **Recomendación para Chile**: Plataforma integrada de gestión remunerativa con módulos de cálculo, control y transparencia.
+- **Característica del sistema integrado**: Plataforma con módulos de cálculo, control y transparencia.
 
 ### Enfoques estratégicos validados internacionalmente
 
 #### 1. Reforma incremental vs. transformación radical
 - **Evidencia**: Reformas exitosas (Perú, Reino Unido) combinaron visión de largo plazo con implementación gradual.
-- **Aplicación en Chile**: Ruta crítica con hitos intermedios, pilotos institucionales y ajustes basados en aprendizaje.
+- **Enfoque del sistema integrado**: Implementación gradual con hitos intermedios, pilotos institucionales y ajustes basados en aprendizaje.
 
 #### 2. Participación de actores relevantes
 - **Evidencia**: Sistemas con amplia participación (Alemania, Canadá) tienen mayor legitimidad y sostenibilidad.
-- **Aplicación en Chile**: Mesa tripartita (gobierno, instituciones, representantes laborales) para diseño e implementación.
+- **Enfoque del sistema integrado**: Diseño que considera múltiples perspectivas de usuarios y administradores.
 
 #### 3. Inversión en capacidades técnicas
 - **Evidencia**: Países con administraciones públicas fuertes (Francia, Alemania) logran implementaciones más efectivas.
-- **Aplicación en Chile**: Programa de fortalecimiento de capacidades en gestión remunerativa para administradores públicos.
+- **Enfoque del sistema integrado**: Capacitación integrada y herramientas de soporte para administradores.
 
 #### 4. Monitoreo y evaluación continua
 - **Evidencia**: Sistemas con mecanismos robustos de M&E (Colombia, Canadá) pueden corregir curso oportunamente.
-- **Aplicación en Chile**: Sistema de indicadores de desempeño del sistema remunerativo con revisiones periódicas.
+- **Enfoque del sistema integrado**: Sistema de indicadores de desempeño con revisiones periódicas.
 
-### Síntesis para decisores chilenos
+### Principios técnicos del sistema integrado basados en experiencias internacionales
 
-#### Prioridades inmediatas
-1. **Establecer marco normativo unificado** que defina principios comunes manteniendo flexibilidad institucional.
-2. **Implementar sistema de transparencia radical** con portal único de datos remunerativos.
-3. **Crear comisión técnica independiente** para recomendaciones de ajuste salarial basadas en evidencia.
-4. **Diseñar sistema de clasificación nacional** de puestos basado en competencias y responsabilidades.
+#### Características clave incorporadas
+1. **Arquitectura configurable**: Permite definir principios comunes manteniendo flexibilidad institucional.
+2. **Módulo de transparencia integral**: Genera portales de datos remunerativos con diferentes niveles de acceso.
+3. **Motor de ajustes parametrizable**: Soporta ajustes salariales basados en evidencia con complementos regionales.
+4. **Sistema de clasificación flexible**: Admite múltiples esquemas de clasificación de puestos basados en competencias.
 
-#### Metas de mediano plazo (3-5 años)
-- Plataforma integrada de gestión remunerativa operativa en todas las instituciones públicas.
-- Mecanismos de equidad salarial implementados y monitoreados.
-- Sistema de ajustes territoriales basado en estudios de costo de vida.
-- Componentes de remuneración variable vinculados a desempeño institucional e individual.
+#### Capacidades de mediano plazo (3-5 años)
+- Plataforma integrada operable en múltiples instituciones públicas simultáneamente.
+- Mecanismos de equidad salarial implementables y monitoreables.
+- Sistema de ajustes territoriales configurable según estudios de costo de vida.
+- Componentes de remuneración variable vinculables a desempeño institucional e individual.
 
-#### Visión de largo plazo
-- Sistema remunerativo público chileno reconocido regionalmente por su equidad, transparencia y eficiencia.
-- Atracción y retención de talento de alta calidad en el sector público.
-- Contribución significativa a la productividad del estado y calidad de los servicios públicos.
+#### Potencial de impacto
+- Sistema remunerativo adaptable a diferentes contextos nacionales e institucionales.
+- Atracción y retención de talento mediante procesos transparentes y equitativos.
+- Contribución a la productividad institucional mediante automatización y precisión.
 
 --- 
 
-*El análisis comparativo internacional confirma que no existe un modelo único perfecto, pero sí un conjunto de buenas prácticas que, adaptadas al contexto chileno, pueden transformar significativamente la gestión remunerativa del sector público.*
+*El análisis comparativo internacional confirma que no existe un modelo único perfecto, pero sí un conjunto de buenas prácticas que pueden incorporarse en sistemas técnicos para transformar significativamente la gestión remunerativa del sector público.*
 
 ---
 
