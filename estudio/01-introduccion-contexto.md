@@ -6,7 +6,7 @@ Los sistemas de remuneración en instituciones públicas representan uno de los 
 
 - **Legislación laboral general** aplicable a todos los trabajadores
 - **Estatutos administrativos especiales** para funcionarios públicos
-- **Regímenes particulares** para fuerzas armadas, policías y cuerpos uniformados
+- **Regímenes particulares** para fuerzas armadas, policías, cuerpos uniformados y régimenes o actividades especiales o riesgosas.
 - **Convenios colectivos** sectoriales
 - **Disposiciones presupuestarias** anuales del Estado
 
