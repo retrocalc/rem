@@ -86,24 +86,6 @@ services:
     depends_on:
       - redis
 
-  ms-calc-rules:
-    build: ./ms-calc-rules
-    container_name: ms-calc-rules
-    ports:
-      - "3005:3005"
-    environment:
-      - PORT=3005
-      - NODE_ENV=production
-      - JSON_DATA_PATH=/app/data/calc-rules.json
-      - LOG_LEVEL=info
-    volumes:
-      - calc-rules-data:/app/data
-      - calc-rules-logs:/app/logs
-    networks:
-      - app-network
-    depends_on:
-      - redis
-
   query-gateway:
     build: ./query-gateway
     container_name: query-gateway
@@ -119,7 +101,6 @@ services:
       - EMPLEADOS_URL=http://ms-empleados:3002/api
       - CONTRATOS_URL=http://ms-contratos:3003/api
       - CALCULOS_URL=http://ms-calculos:3004/api
-      - CALC_RULES_URL=http://ms-calc-rules:3005/api
     networks:
       - app-network
     depends_on:
@@ -128,7 +109,6 @@ services:
       - ms-empleados
       - ms-contratos
       - ms-calculos
-      - ms-calc-rules
 
   command-gateway:
     build: ./command-gateway
@@ -145,7 +125,6 @@ services:
       - EMPLEADOS_URL=http://ms-empleados:3002/api
       - CONTRATOS_URL=http://ms-contratos:3003/api
       - CALCULOS_URL=http://ms-calculos:3004/api
-      - CALC_RULES_URL=http://ms-calc-rules:3005/api
     networks:
       - app-network
     depends_on:
@@ -154,7 +133,6 @@ services:
       - ms-empleados
       - ms-contratos
       - ms-calculos
-      - ms-calc-rules
 
   api-gateway:
     build: ./api-gateway
@@ -169,7 +147,6 @@ services:
       - EMPLEADOS_URL=http://ms-empleados:3002
       - CONTRATOS_URL=http://ms-contratos:3003
       - CALCULOS_URL=http://ms-calculos:3004
-      - CALC_RULES_URL=http://ms-calc-rules:3005
       - QUERY_GATEWAY_URL=http://query-gateway:3006
       - COMMAND_GATEWAY_URL=http://command-gateway:3007
     networks:
@@ -179,7 +156,6 @@ services:
       - ms-empleados
       - ms-contratos
       - ms-calculos
-      - ms-calc-rules
       - query-gateway
       - command-gateway
 
@@ -192,7 +168,6 @@ volumes:
   empleados-data:
   contratos-data:
   calculos-data:
-  calc-rules-data:
   parametros-logs:
   empleados-logs:
   contratos-logs:
