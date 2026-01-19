@@ -222,25 +222,25 @@ seguro_cesantia = base_imponible * 0.03
 flowchart TD
     A[Inicio: Remuneración Bruta] --> B[Determinar Base Imponible Previsional]
     B --> C{Aplicar Descuentos Previsionales Obligatorios}
-    C --> D[Pensiones: AFP/IPS/Cajas<br>10% base]
-    D --> E[Salud: FONASA/ISAPRES<br>7% base]
-    E --> F[Seguro Cesantía<br>3% base]
-    F --> G[Seguro Invalidez AFP<br>1% base]
-    G --> H[Aporte Solidario AFP<br>1% base]
-    H --> I[Calcular Base Tributaria:<br>Bruto - Previsionales]
-    I --> J{Aplicar Impuesto Único<br>Segunda Categoría}
+    C --> D[Pensiones: AFP/IPS/Cajas<br/>10% base]
+    D --> E[Salud: FONASA/ISAPRES<br/>7% base]
+    E --> F[Seguro Cesantía<br/>3% base]
+    F --> G[Seguro Invalidez AFP<br/>1% base]
+    G --> H[Aporte Solidario AFP<br/>1% base]
+    H --> I[Calcular Base Tributaria:<br/>Bruto - Previsionales]
+    I --> J{Aplicar Impuesto Único<br/>Segunda Categoría}
     J --> K[Determinar Tramos y Tasas Vigentes]
     K --> L[Calcular Impuesto Mensual]
-    L --> M[Remuneración Líquida Provisional:<br>Bruto - Previsionales - Impuestos]
+    L --> M[Remuneración Líquida Provisional:<br/>Bruto - Previsionales - Impuestos]
     M --> N{Existen Descuentos Judiciales?}
-    N -- Sí --> O[Aplicar Pensiones Alimenticias<br>Hasta 50% del líquido]
-    O --> P[Aplicar Embargos Judiciales<br>Según orden notificación]
+    N -- Sí --> O[Aplicar Pensiones Alimenticias<br/>Hasta 50% del líquido]
+    O --> P[Aplicar Embargos Judiciales<br/>Según orden notificación]
     N -- No --> Q[Saltar descuentos judiciales]
     P --> R{Existen Descuentos Voluntarios?}
     Q --> R
-    R -- Sí --> S[Aplicar Descuentos Voluntarios/Convencionales<br>Cuotas sindicales, mutuales, etc.]
+    R -- Sí --> S[Aplicar Descuentos Voluntarios/Convencionales<br/>Cuotas sindicales, mutuales, etc.]
     R -- No --> T[Saltar descuentos voluntarios]
-    S -->     U[Verificar Mínimo Vital<br>No &lt; 75% sueldo mínimo]
+    S -->     U[Verificar Mínimo Vital<br/>No &lt; 75% sueldo mínimo]
     T --> U
     U --> V[Fin: Remuneración Líquida a Pagar]
     
@@ -315,19 +315,19 @@ Cuando un funcionario tiene varias órdenes judiciales de descuento:
 
 ```mermaid
 flowchart TD
-    Start[Inicio: Líquido Provisional Disponible] --> Check{Existen múltiples<br>descuentos judiciales?}
-    Check -- No --> ApplySingle[Aplicar único descuento<br>respetando límites legales]
-    Check -- Sí --> Order[Ordenar por prioridad:<br>1. Fecha notificación<br>2. Tipo (alimentos -> fiscal -> comercial)]
-    Order --> Limits[Verificar límites por tipo:<br>- Alimentos: <=50% líquido<br>- Fiscal: <=50% líquido<br>- Comercial: <=30% líquido después alimentos]
-    Limits --> Total[Calcular total solicitado:<br>Suma todos los montos solicitados]
+    Start[Inicio: Líquido Provisional Disponible] --> Check{Existen múltiples<br/>descuentos judiciales?}
+    Check -- No --> ApplySingle[Aplicar único descuento<br/>respetando límites legales]
+    Check -- Sí --> Order[Ordenar por prioridad:<br/>1. Fecha notificación<br/>2. Tipo: alimentos, fiscal, comercial]
+    Order --> Limits[Verificar límites por tipo:<br/>- Alimentos: <=50% líquido<br/>- Fiscal: <=50% líquido<br/>- Comercial: <=30% líquido después alimentos]
+    Limits --> Total[Calcular total solicitado:<br/>Suma todos los montos solicitados]
     Total --> Compare{Total <= Límite acumulativo 70%?}
-    Compare -- Sí --> ApplyAll[Aplicar todos los descuentos<br>completamente según orden]
-    Compare -- No --> Calculate[Calcular reparto proporcional:<br>Cada descuento = (Monto solicitado / Total) * Límite 70%]
-    Calculate --> ApplyProportional[Aplicar montos proporcionales<br>respetando orden de prioridad]
-    ApplyAll --> Verify[Verificar mínimo vital:<br>Líquido final >= 75% sueldo mínimo]
+    Compare -- Sí --> ApplyAll[Aplicar todos los descuentos<br/>completamente según orden]
+    Compare -- No --> Calculate["Calcular reparto proporcional:<br/>Cada descuento = (Monto solicitado / Total) * Límite 70%"]
+    Calculate --> ApplyProportional[Aplicar montos proporcionales<br/>respetando orden de prioridad]
+    ApplyAll --> Verify[Verificar mínimo vital:<br/>Líquido final >= 75% sueldo mínimo]
     ApplyProportional --> Verify
     ApplySingle --> Verify
-    Verify --> End[Fin: Líquido a pagar después<br>de todos los descuentos judiciales]
+    Verify --> End[Fin: Líquido a pagar después<br/>de todos los descuentos judiciales]
     
     style Start fill:#e1f5fe
     style End fill:#e8f5e8
@@ -395,13 +395,13 @@ Tramo 8: Más de 310 UTA → 40%
 
 ```mermaid
 flowchart TD
-    Start[Inicio: Renta Líquida Imponible] --> Annualize[Proyectar renta anual:<br>Mensual * 12 o 14 según gratificación]
-    Annualize --> Determine[Determinar tramo impositivo anual:<br>Comparar con tabla de tramos vigente]
-    Determine --> Calculate[Calcular impuesto anual progresivo:<br>Aplicar tasa marginal a excedentes]
-    Calculate --> Rebajas[Aplicar rebajas legales:<br>- Segunda categoría<br>- Dependientes<br>- Otras deducciones]
-    Rebajas --> Monthly[Calcular impuesto mensual:<br>Impuesto anual neto / 12 o 14]
-    Monthly --> Withhold[Retener impuesto mensual<br>de la remuneración líquida]
-    Withhold --> Verify[Verificar retenciones acumuladas<br>vs. obligación anual]
+    Start[Inicio: Renta Líquida Imponible] --> Annualize[Proyectar renta anual:<br/>Mensual * 12 o 14 según gratificación]
+    Annualize --> Determine[Determinar tramo impositivo anual:<br/>Comparar con tabla de tramos vigente]
+    Determine --> Calculate[Calcular impuesto anual progresivo:<br/>Aplicar tasa marginal a excedentes]
+    Calculate --> Rebajas[Aplicar rebajas legales:<br/>- Segunda categoría<br/>- Dependientes<br/>- Otras deducciones]
+    Rebajas --> Monthly[Calcular impuesto mensual:<br/>Impuesto anual neto / 12 o 14]
+    Monthly --> Withhold[Retener impuesto mensual<br/>de la remuneración líquida]
+    Withhold --> Verify[Verificar retenciones acumuladas<br/>vs. obligación anual]
     Verify --> End[Fin: Impuesto retenido aplicado]
 
     style Start fill:#e1f5fe
