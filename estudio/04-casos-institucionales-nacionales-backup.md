@@ -137,6 +137,6 @@ Las Fuerzas Armadas de Chile (Ejército, Armada y Fuerza Aérea) operan con sist
 
 ---
 
-**Próximo capítulo**: [5. Análisis Comparativo Internacional](../README.md#5-análisis-comparativo-internacional)
+**Próximo capítulo**: [5. Análisis Comparativo Internacional](05-analisis-comparativo-internacional.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*

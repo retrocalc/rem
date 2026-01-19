@@ -1,6 +1,6 @@
-# 9. Implementación y Adopción
+# 10. Implementación y Adopción
 
-## 9.1. Estrategia de implementación gradual
+## 10.1. Estrategia de implementación gradual
 
 La implementación exitosa de un sistema integrado de remuneraciones en el sector público chileno requiere una estrategia gradual y adaptativa que equilibre ambición transformadora con prudencia operativa, priorizando instituciones según criterios objetivos, diseñando fases de implementación con hitos claros y mantiendo flexibilidad para ajustar el enfoque basándose en aprendizajes tempranos.
 
@@ -132,7 +132,7 @@ La implementación exitosa de un sistema integrado de remuneraciones en el secto
 
 *Una estrategia de implementación gradual bien diseñada transforma el desafío aparentemente abrumador de modernizar la administración remunerativa pública completa en una secuencia manejable de pasos incrementales, donde cada éxito construye momentum para el siguiente, cada lección aprendida mejora el proceso y cada instituión transformada sirve como testimonio vivo del valor de la innovación en servicio público.*
 
-## 9.2. Capacitación y desarrollo de competencias
+## 10.2. Capacitación y desarrollo de competencias
 
 La transición exitosa hacia un sistema integrado de remuneraciones requiere no solo tecnología avanzada sino también un plan integral de capacitación que transforme las competencias del capital humano involucrado, evolucionando desde perfiles tradicionales centrados en procesos manuales hacia profesionales digitales capaces de maximizar el valor de herramientas automatizadas mientras mantienen y profundizan su expertise normativo y de gestión.
 
@@ -281,7 +281,7 @@ La transición exitosa hacia un sistema integrado de remuneraciones requiere no 
 
 *La capacitación y desarrollo de competencias transforma la implementación tecnológica de un proyecto de sistemas en una iniciativa de desarrollo de capital humano, donde la inversión en personas no solo asegura el éxito del sistema de remuneraciones sino que construye capacidades digitales duraderas que benefician a todo el sector público chileno en su transición hacia la administración del siglo XXI.*
 
-## 9.3. Gestión del cambio organizacional
+## 10.3. Gestión del cambio organizacional
 
 La implementación de un sistema integrado de remuneraciones representa una transformación organizacional profunda que va más allá de la tecnología, requiriendo estrategias deliberadas de gestión del cambio que aborden resistencias naturales, fomenten adopción temprana y construyan una cultura de mejora continua, transformando no solo cómo se calculan las remuneraciones sino también cómo se conceptualiza y valora el trabajo administrativo en el sector público.
 
@@ -433,7 +433,7 @@ La implementación de un sistema integrado de remuneraciones representa una tran
 
 *La gestión efectiva del cambio organizacional transforma la implementación tecnológica de un sistema de remuneraciones en una oportunidad para renovar la cultura administrativa pública, construyendo no solo capacidades digitales sino también una mentalidad de mejora continua, colaboración interinstitucional y servicio centrado en el funcionario que beneficia a todo el sector público en su camino hacia la excelencia administrativa.*
 
-## 9.4. Monitoreo y evaluación de resultados
+## 10.4. Monitoreo y evaluación de resultados
 
 La implementación exitosa de un sistema integrado de remuneraciones requiere no solo diseño y ejecución cuidadosos sino también un sistema robusto de monitoreo y evaluación que proporcione evidencia objetiva sobre progreso, identifique áreas de mejora oportuna y asegure la sostenibilidad del sistema en el largo plazo mediante aprendizaje continuo y ajuste basado en datos.
 
@@ -596,6 +596,6 @@ La implementación exitosa de un sistema integrado de remuneraciones requiere no
 
 ---
 
-**Próximo capítulo**: [10. Beneficios del Reconocimiento Automático de Textos para Identificación de Datos en Documentos Oficiales](../README.md#10-beneficios-del-reconocimiento-automático-de-textos-para-identificación-de-datos-en-documentos-oficiales)
+**Próximo capítulo**: [11. Beneficios del Reconocimiento Automático de Textos para Identificación de Datos en Documentos Oficiales](11-beneficios-reconocimiento-textos.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*

@@ -646,6 +646,6 @@ interface ParametroPorMes {
 
 ---
 
-**Próximo capítulo**: [4. Casos Institucionales Nacionales](../README.md#4-casos-institucionales-nacionales)
+**Próximo capítulo**: [4. Casos Institucionales Nacionales](04-casos-institucionales-nacionales.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*

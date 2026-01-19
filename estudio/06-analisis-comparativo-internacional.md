@@ -1,6 +1,6 @@
-# 5. Análisis Comparativo Internacional
+# 6. Análisis Comparativo Internacional
 
-## 5.1. Sistemas latinoamericanos: Similitudes regionales
+## 6.1. Sistemas latinoamericanos: Similitudes regionales
 
 Los sistemas remunerativos del sector público en América Latina presentan notables similitudes derivadas de tradiciones administrativas compartidas, procesos históricos paralelos y desafíos comunes en materia de gestión del talento humano y control del gasto público.
 
@@ -49,7 +49,7 @@ Los sistemas remunerativos del sector público en América Latina presentan nota
 - **Oportunidades de la meritocracia**: Implementación peruana demuestra viabilidad de vincular desempeño y compensación.
 - **Importancia de la transparencia**: Sistema mexicano de nómina única como herramienta anticorrupción.
 
-## 5.2. Experiencias europeas: Enfoques centralizados vs. descentralizados
+## 6.2. Experiencias europeas: Enfoques centralizados vs. descentralizados
 
 Europa ofrece un laboratorio natural de modelos remunerativos públicos que varían desde sistemas altamente centralizados hasta esquemas federales y autonómicos, reflejando diferentes tradiciones administrativas, relaciones estado-sociedad y grados de descentralización política y fiscal.
 
@@ -94,7 +94,7 @@ Europa ofrece un laboratorio natural de modelos remunerativos públicos que var�
 - **Mecanismos de equidad territorial**: Complementos regionales basados en costo de vida y dificultad de atracción de talento.
 - **Órgano asesor independiente**: Instituir comisión técnica para recomendaciones de ajuste salarial basadas en indicadores objetivos.
 
-## 5.3. Casos de Norteamérica: Modelos de administración pública
+## 6.3. Casos de Norteamérica: Modelos de administración pública
 
 Los sistemas remunerativos públicos de Estados Unidos y Canadá representan dos aproximaciones diferentes dentro de la tradición anglosajona: mientras Estados Unidos combina un sistema federal altamente estructurado con autonomía estatal significativa, Canadá ha desarrollado un modelo más centralizado con fuerte énfasis en equidad y transparencia.
 
@@ -152,7 +152,7 @@ Los sistemas remunerativos públicos de Estados Unidos y Canadá representan dos
 4. **Mecanismos de equidad**: Adoptar legislación proactiva para cerrar brechas salariales por género y grupo ocupacional.
 5. **Negociación sectorial**: Estructurar la negociación colectiva por grupos ocupacionales homogéneos.
 
-## 5.4. Lecciones aprendidas y mejores prácticas globales
+## 6.4. Lecciones aprendidas y mejores prácticas globales
 
 La revisión comparativa internacional revela un conjunto de principios, herramientas y enfoques que han demostrado efectividad en diversos contextos y que podrían adaptarse estratégicamente para mejorar los sistemas remunerativos públicos chilenos, equilibrando los objetivos de equidad, eficiencia, transparencia y sostenibilidad fiscal.
 
@@ -174,7 +174,7 @@ La revisión comparativa internacional revela un conjunto de principios, herrami
 - **Lección internacional**: Legislación proactiva (Canadá) es más efectiva que remediación posterior.
 - **Aplicación en Chile**: Ley de equidad salarial en sector público con auditorías periódicas y planes de corrección.
 
-#### 5. Descentralización inteligente
+#### 6. Descentralización inteligente
 - **Lección internacional**: Autonomía regional (España) fomenta innovación pero requiere mecanismos de coordinación.
 - **Aplicación en Chile**: Competencias remunerativas diferenciadas por nivel de gobierno con instancias de armonización técnica.
 
@@ -238,6 +238,6 @@ La revisión comparativa internacional revela un conjunto de principios, herrami
 
 ---
 
-**Próximo capítulo**: [6. Dimensiones Técnico-Normativas](../README.md#6-dimensiones-técnico-normativas)
+**Próximo capítulo**: [7. Dimensiones Técnico-Normativas](07-dimensiones-tecnico-normativas.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*

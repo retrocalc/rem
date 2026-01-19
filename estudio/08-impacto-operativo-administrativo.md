@@ -1,6 +1,6 @@
-# 7. Impacto Operativo y Administrativo
+# 8. Impacto Operativo y Administrativo
 
-## 7.1. Carga de trabajo en procesos manuales
+## 8.1. Carga de trabajo en procesos manuales
 
 La administración remunerativa manual en instituciones públicas chilenas consume una proporción significativa de recursos humanos y financieros, con procesos que combinan tareas repetitivas de alto volumen, verificaciones complejas que requieren expertise especializado y correcciones constantes que consumen tiempo valioso de personal calificado.
 
@@ -84,7 +84,7 @@ La administración remunerativa manual en instituciones públicas chilenas consu
 
 La carga de trabajo en procesos manuales de remuneraciones representa una ineficiencia estructural significativa en el sector público chileno, con costos directos e indirectos que superan ampliamente los estándares internacionales y que limitan la capacidad de las instituciones para dedicar recursos a actividades de mayor valor estratégico. La automatización integral de estos procesos ofrece el potencial de liberar entre 60-80% del tiempo actualmente dedicado a tareas manuales, equivalentes a cientos de millones de pesos anuales en costo de personal y oportunidad en instituciones medianas y grandes.
 
-## 7.2. Riesgos de error y sus consecuencias institucionales
+## 8.2. Riesgos de error y sus consecuencias institucionales
 
 Los errores en cálculos remunerativos manuales no son eventos aislados sino un riesgo sistémico con probabilidades cuantificables y consecuencias que trascienden lo meramente financiero, afectando la legalidad de los actos administrativos, la confianza institucional y la relación estado-funcionario, con costos directos e indirectos que multiplican varias veces el monto original de los errores.
 
@@ -200,7 +200,7 @@ Costo Total = Costos Directos Rectificación +
 
 Los riesgos de error en cálculos manuales de remuneraciones representan una vulnerabilidad crítica en la administración pública chilena, con costos totales que equivalen a porcentajes significativos del gasto en personal y consecuencias que trascienden lo financiero para afectar la legalidad, legitimidad y eficiencia institucional. La automatización robusta no es solo una opción tecnológica sino una necesidad estratégica para instituciones que buscan garantizar el cumplimiento de sus obligaciones legales, proteger sus finanzas y mantener la confianza de sus funcionarios y la ciudadanía.
 
-## 7.3. Tiempos de procesamiento y demoras en pagos
+## 8.3. Tiempos de procesamiento y demoras en pagos
 
 Los plazos involucrados en procesos remunerativos manuales desde el cierre del período hasta el pago efectivo a funcionarios presentan variaciones significativas que afectan la liquidez de los empleados públicos, generan costos de oportunidad acumulativos e identifican cuellos de botella estructurales que limitan la eficiencia del sector público como empleador.
 
@@ -341,7 +341,7 @@ Los plazos involucrados en procesos remunerativos manuales desde el cierre del p
 
 *La aceleración de tiempos de procesamiento remunerativo no es solo una mejora operativa, sino una transformación que impacta directamente el bienestar económico de cientos de miles de familias, la eficiencia del sector público y la credibilidad del estado como empleador modelo.*
 
-## 7.4. Costos ocultos de la administración remunerativa
+## 8.4. Costos ocultos de la administración remunerativa
 
 Más allá de los costos directos visibles de personal, sistemas y procesos, la administración remunerativa manual genera una constelación de costos indirectos u ocultos que rara vez se consideran en evaluaciones económicas pero que representan entre el 40-60% del costo total real, incluyendo capacitación especializada constante, sistemas de respaldo redundantes, seguros de responsabilidad institucional y pérdidas masivas de productividad en toda la organización.
 
@@ -487,6 +487,6 @@ Más allá de los costos directos visibles de personal, sistemas y procesos, la 
 
 ---
 
-**Próximo capítulo**: [8. Solución Integrada Propuesta](../README.md#8-solución-integrada-propuesta)
+**Próximo capítulo**: [9. Solución Integrada Propuesta](09-solucion-integrada-propuesta.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*

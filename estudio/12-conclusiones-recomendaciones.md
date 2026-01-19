@@ -132,7 +132,7 @@ El estudio identificó que el cálculo retroactivo no es una funcionalidad margi
 **Objetivo**: Extender solución a grupos de instituciones con características similares.
 
 **Acciones críticas:**
-1. Implementación en todas las fuerzas de orden y seguridad (Carabineros, PDI, Gendarmería).
+1. Implementación en instituciones de seguridad y orden público (fuerzas policiales, servicio penitenciario, organismos de protección civil).
 2. Extensión a ministerios sociales (Salud, Educación, Desarrollo Social).
 3. Desarrollo de capacidades de autoservicio para instituciones de menor tamaño.
 4. Establecimiento de modelo de gobernanza distribuida.
@@ -270,6 +270,8 @@ El estudio identificó que el cálculo retroactivo no es una funcionalidad margi
 **Compromiso de actualización**: Este documento será revisado y actualizado anualmente para incorporar nuevas evidencias, aprendizajes de implementación y desarrollos tecnológicos relevantes.
 
 ---
+
+**Próximo capítulo**: [13. Bibliografía y Referencias](13-bibliografia.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*
 

@@ -1,4 +1,4 @@
-# 10. Beneficios del Reconocimiento Automático de Textos para Identificación de Datos en Documentos Oficiales
+# 11. Beneficios del Reconocimiento Automático de Textos para Identificación de Datos en Documentos Oficiales
 
 ## 10.1. Fundamentos tecnológicos del reconocimiento automático de textos
 
@@ -139,7 +139,7 @@ La implementación exitosa de estas capacidades no solo optimiza procesos operat
 
 ---
 
-**Próximo capítulo**: [11. Conclusiones y Recomendaciones](../README.md#11-conclusiones-y-recomendaciones)
+**Próximo capítulo**: [12. Conclusiones y Recomendaciones](12-conclusiones-recomendaciones.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*
 

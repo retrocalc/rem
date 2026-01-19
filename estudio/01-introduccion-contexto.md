@@ -6,7 +6,7 @@ Los sistemas de remuneración en instituciones públicas representan uno de los 
 
 - **Legislación laboral general** aplicable a todos los trabajadores
 - **Estatutos administrativos especiales** para funcionarios públicos
-- **Regímenes particulares** para fuerzas armadas, policías, cuerpos uniformados y régimenes o actividades especiales o riesgosas.
+- **Regímenes particulares** para instituciones de seguridad, salud, educación, administración central, gobiernos locales y actividades especiales o riesgosas.
 - **Convenios colectivos** sectoriales
 - **Disposiciones presupuestarias** anuales del Estado
 
@@ -25,7 +25,7 @@ Esta superposición de normativas crea un escenario donde un mismo empleado pued
 
 - **Temporal**: Análisis de sistemas actuales y proyección a futuro
 - **Geográfico**: Enfoque principal en Chile con referencias comparativas internacionales
-- **Institucional**: Cubre fuerzas armadas, policías, administración pública centralizada y descentralizada
+- **Institucional**: Cubre ministerios, servicios de salud, sistema educacional, municipalidades, gobiernos regionales, instituciones de seguridad y toda la administración pública centralizada y descentralizada
 - **Tecnológico**: Evaluación de soluciones existentes y diseño de propuestas innovadoras
 
 ## 1.3. Metodología de análisis
@@ -102,24 +102,25 @@ Más allá de su función operativa, los sistemas de remuneraciones cumplen role
 
 ## 1.6. Estructura del documento
 
-Este estudio se organiza en once capítulos que progresan desde el análisis de problemáticas hasta la propuesta de soluciones:
+Este estudio se organiza en doce capítulos que progresan desde el análisis de problemáticas hasta la propuesta de soluciones:
 
 1. **Introducción y contexto** (presente capítulo)
 2. **Problemáticas estructurales comunes**
-3. **Complejidades del cálculo retroactivo**
-4. **Casos institucionales nacionales**
-5. **Análisis comparativo internacional**
-6. **Dimensiones técnico-normativas**
-7. **Impacto operativo y administrativo**
-8. **Solución integrada propuesta**
-9. **Implementación y adopción**
-10. **Beneficios del reconocimiento automático de textos para identificación de datos en documentos oficiales**
-11. **Conclusiones y recomendaciones**
+3. **Procedimiento integral de cálculo de remuneraciones públicas**
+4. **Complejidades del cálculo retroactivo**
+5. **Casos institucionales nacionales**
+6. **Análisis comparativo internacional**
+7. **Dimensiones técnico-normativas**
+8. **Impacto operativo y administrativo**
+9. **Solución integrada propuesta**
+10. **Implementación y adopción**
+11. **Beneficios del reconocimiento automático de textos para identificación de datos en documentos oficiales**
+12. **Conclusiones y recomendaciones**
 
 Cada capítulo se construye sobre los hallazgos de los anteriores, creando un análisis integral que permite comprender la totalidad del desafío y diseñar soluciones efectivas.
 
 ---
 
-**Próximo capítulo**: [2. Problemáticas Estructurales Comunes](../README.md#2-problemáticas-estructurales-comunes)
+**Próximo capítulo**: [2. Problemáticas Estructurales Comunes](02-problematicas-estructurales.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*

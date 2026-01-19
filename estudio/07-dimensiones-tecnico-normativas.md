@@ -1,6 +1,6 @@
-# 6. Dimensiones Técnico-Normativas
+# 7. Dimensiones Técnico-Normativas
 
-## 6.1. Interpretación y aplicación de normativas vigentes
+## 7.1. Interpretación y aplicación de normativas vigentes
 
 La interpretación correcta de normativas remunerativas complejas y a veces ambiguas representa uno de los desafíos técnicos más significativos en la administración de remuneraciones públicas, donde diferencias interpretativas mínimas pueden generar errores acumulativos masivos y consecuencias legales y financieras considerables.
 
@@ -19,7 +19,7 @@ La interpretación correcta de normativas remunerativas complejas y a veces ambi
 ### Desafíos en la interpretación consistente
 
 #### Variabilidad interpretativa
-- **Diferencias entre instituciones**: Misma norma aplicada de manera distinta en Carabineros, Gendarmería y Fuerzas Armadas.
+- **Diferencias entre instituciones**: Misma norma aplicada de manera distinta en diferentes ministerios, servicios de salud, municipalidades e instituciones de seguridad.
 - **Cambios en el tiempo**: Interpretaciones que evolucionan sin documentación clara de los criterios de cambio.
 - **Dependencia de expertos**: Conocimiento tácito concentrado en pocos funcionarios con riesgo de pérdida por rotación.
 
@@ -73,7 +73,7 @@ La interpretación correcta de normativas remunerativas complejas y a veces ambi
 
 *La interpretación consistente de normativas complejas no es solo un desafío técnico, sino una condición necesaria para la equidad, transparencia y legalidad en la administración de remuneraciones públicas.*
 
-## 6.2. Conciliación entre disposiciones legales contradictorias
+## 7.2. Conciliación entre disposiciones legales contradictorias
 
 En sistemas normativos complejos como el chileno, es frecuente encontrar disposiciones legales que aparentemente se contradicen o presentan ambigüedades sobre cuál aplicar en situaciones específicas, requiriendo mecanismos sistemáticos para identificar, analizar y resolver estos conflictos de manera consistente y justificable.
 
@@ -165,7 +165,7 @@ En sistemas normativos complejos como el chileno, es frecuente encontrar disposi
 
 *La conciliación sistemática de disposiciones legales contradictorias transforma un problema crónico de administración pública en una oportunidad para fortalecer la seguridad jurídica, equidad y eficiencia en la gestión remunerativa.*
 
-## 6.3. Actualización dinámica de parámetros y tablas
+## 7.3. Actualización dinámica de parámetros y tablas
 
 La administración de remuneraciones públicas requiere mantener actualizados cientos de parámetros (tasas, porcentajes, montos límite) y decenas de tablas completas de asignaciones que cambian periódicamente por ajustes normativos, inflación, negociaciones colectivas o decisiones presupuestarias, necesitando sistemas que aseguren que estos cambios se reflejen inmediata y consistentemente en todos los cálculos.
 
@@ -276,7 +276,7 @@ interface ParametroRemunerativo {
 
 *La actualización dinámica de parámetros y tablas transforma un proceso administrativo engorroso y propenso a errores en una ventaja competitiva institucional, permitiendo respuestas ágiles a cambios normativos y garantizando consistencia en todos los cálculos remunerativos.*
 
-## 6.4. Validación y auditoría de cálculos complejos
+## 7.4. Validación y auditoría de cálculos complejos
 
 En sistemas remunerativos con cientos de variables, miles de reglas y millones de combinaciones posibles, la validación y auditoría manual de cálculos resulta insuficiente, requiriendo mecanismos automatizados de validación cruzada, verificaciones de consistencia y procesos de auditoría sistemática que garanticen la precisión de resultados sin depender exclusivamente de revisiones humanas propensas a errores y limitaciones de escala.
 
@@ -419,6 +419,6 @@ interface Validador {
 
 ---
 
-**Próximo capítulo**: [7. Impacto Operativo y Administrativo](../README.md#7-impacto-operativo-y-administrativo)
+**Próximo capítulo**: [8. Impacto Operativo y Administrativo](08-impacto-operativo-administrativo.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*

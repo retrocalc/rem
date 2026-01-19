@@ -8,16 +8,16 @@ Las instituciones públicas operan con una variedad desconcertante de sistemas d
 
 **Sistemas jerárquicos paralelos:**
 - **Escalafones administrativos**: Basados en formación académica y experiencia
-- **Grados militares/policiales**: Estructuras castrenses con rangos específicos
+- **Grados jerárquicos especializados**: Estructuras con rangos específicos según tipo de institución (ministerial, educacional, de salud, de seguridad)
 - **Categorías técnicas**: Clasificaciones por especialidad profesional
 - **Niveles salariales**: Bandas definidas por negociación colectiva
 
 **Ejemplo concreto:**
-Un oficial de Gendarmería puede simultáneamente pertenecer a:
-- Grado jerárquico dentro de la institución (Teniente, Capitán)
-- Escalafón por especialidad (Penitenciario, Administrativo)
+Un funcionario público puede simultáneamente pertenecer a:
+- Grado jerárquico dentro de la institución (Profesional, Jefe de Departamento, Director)
+- Escalafón por especialidad (Técnico, Profesional, Directivo)
 - Categoría salarial según antigüedad y méritos
-- Régimen previsional específico (Caja de Previsión de la Defensa Nacional)
+- Régimen previsional específico según tipo de institución (AFP, IPS, Cajas de Previsión especiales)
 
 ### 2.1.2. Incompatibilidad entre sistemas
 
@@ -164,6 +164,6 @@ Es común encontrar disposiciones contradictorias:
 
 ---
 
-**Próximo capítulo**: [3. Complejidades del Cálculo Retroactivo](../README.md#3-complejidades-del-cálculo-retroactivo)
+**Próximo capítulo**: [3. Procedimiento Integral de Cálculo de Remuneraciones Públicas](03-procedimiento-calculo-remuneraciones.md)
 
 *Regresar al [Índice General](../README.md#índice-general-del-estudio)*
